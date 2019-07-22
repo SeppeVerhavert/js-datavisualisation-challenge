@@ -1,0 +1,19 @@
+.stat_themes {
+	width:100%;
+}
+
+.stat_theme {
+	float:left;
+	width: 33.3%
+}
+
+.stat_themes_line {
+	width:100%;
+	display:inline-block;
+}
+
+.stat_theme_categ {
+	padding-left:25px;
+	padding-top:5px;
+	padding-bottom:5px;
+}

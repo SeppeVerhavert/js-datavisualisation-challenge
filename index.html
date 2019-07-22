@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093) -->
+<html lang="fr" dir="ltr"
+    class="client-js js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Ie=Edge,chrome=1">
+    <title>Statistiques sur la criminalité - Statistics Explained</title>
+    <meta name="generator" content="MediaWiki 1.22.5">
+    <link rel="shortcut icon" href="http://ec.europa.eu/skins/common/logos/favicon.gif">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom de Statistics Explained"
+        href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+    <link rel="stylesheet" href="./assets/EMPM_MainPage.css">
+    <link rel="stylesheet" href="./assets/StatexpBPM.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/styles(1).css">
+    <link rel="stylesheet" href="./assets/ext.cite.css">
+    <link rel="stylesheet" href="./assets/jquery.makeCollapsible.css">
+    <link rel="stylesheet" href="./assets/jquery.tipsy.css">
+    <link rel="stylesheet" href="./assets/jquery.suggestions.css">
+    <link rel="stylesheet" href="./assets/mediawiki.searchSuggest.css">
+    <link rel="stylesheet" href="./assets/mediawiki.action.view.postEdit.css">
+    <meta name="ResourceLoaderDynamicStyles" content="">
+    <link href="./assets/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/statexpflat.css">
+    <link rel="stylesheet" href="./assets/statexpflat-grid.css">
+
+    <style>
+        a:lang(ar),
+        a:lang(ckb),
+        a:lang(kk-arab),
+        a:lang(mzn),
+        a:lang(ps),
+        a:lang(ur) {
+            text-decoration: none;
+        }
+
+        table {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            font-size: 12px;
+            background: #fff;
+            margin: 2rem 0;
+            width: 480px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        table thead th {
+            font-size: 14px;
+            font-weight: normal;
+            color: #039;
+            padding: 10px 8px;
+            border-bottom: 2px solid #6678b1;
+        }
+
+        table td {
+            color: #669;
+            padding: 9px 8px 0px 8px;
+            border: 1px solid #DDD;
+
+        }
+
+        table tbody tr:hover td {
+            color: #009;
+        }
+
+        .bodyContent {
+            padding: 2rem 0rem;
+            line-height: 1.5;
+            max-width: 80rem;
+            margin: auto;
+        }
+
+        .toc {
+            width: auto;
+            padding: 2rem;
+        }
+
+        .content {
+            padding: 2rem 4rem;
+        }
+    </style>
+</head>
+
+<body class="mediawiki ltr sitedir-ltr ns-110 ns-subject page-Archive_Crime_statistics_fr skin-statexpflat action-view"
+    cz-shortcut-listen="true">
+
+
+    <div class="container">
+
+        <div class="header" id="se-header">
+            <div class="grey-stripe"></div>
+            <div class="flag hidden-xs hidden-sm"></div>
+            <div class="flag-mobile hidden-md hidden-lg"></div>
+            <ul class="login list-inline hidden-xs hidden-sm">
+                <li>
+                    <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Help:Contents">Aide</a>
+                </li>
+
+                <li>
+                    <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:UserLogin&amp;returnto=Archive%3ACrime+statistics%2Ffr"
+                        title="Il est nécessaire de se connecter avant toute modification (réservé à Eurostat et aux contributeurs accrédités)"
+                        accesskey="o">identification</a>
+                </li>
+                <li class="login-icon"></li>
+            </ul>
+
+            <div class="heading">
+                <!--<div class="statexp-small hidden-lg hidden-md">Statistics Explained</div>-->
+                <div class="lighthouse articles visible-lg-block"></div>
+
+                <div class="links hidden-xs hidden-sm">
+                    <ul class="list-inline">
+
+
+                        <li class="lang-selector hidden-xs hidden-sm">
+                            <div class="dropdown">
+                                <button id="lang-selector" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <strong class="selflink">français</strong>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics"
+                                            title="Archive:Crime statistics">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/bg"
+                                            title="Archive:Crime statistics/bg">български</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/cs"
+                                            title="Archive:Crime statistics/cs">česky</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/da"
+                                            title="Archive:Crime statistics/da">dansk</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/de"
+                                            title="Archive:Crime statistics/de">Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/et"
+                                            title="Archive:Crime statistics/et">eesti</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/el"
+                                            title="Archive:Crime statistics/el">Ελληνικά</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/es"
+                                            title="Archive:Crime statistics/es">español</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/hr"
+                                            title="Archive:Crime statistics/hr">hrvatski</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/it"
+                                            title="Archive:Crime statistics/it">italiano</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/lv"
+                                            title="Archive:Crime statistics/lv">latviešu</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/lt"
+                                            title="Archive:Crime statistics/lt">lietuvių</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/hu"
+                                            title="Archive:Crime statistics/hu">magyar</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/nl"
+                                            title="Archive:Crime statistics/nl">Nederlands</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/pl"
+                                            title="Archive:Crime statistics/pl">polski</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/pt"
+                                            title="Archive:Crime statistics/pt">português</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/ro"
+                                            title="Archive:Crime statistics/ro">română</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/sk"
+                                            title="Archive:Crime statistics/sk">slovenčina</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/sl"
+                                            title="Archive:Crime statistics/sl">slovenščina</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/fi"
+                                            title="Archive:Crime statistics/fi">suomi</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Archive:Crime_statistics/sv"
+                                            title="Archive:Crime statistics/sv">svenska</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!----
+		<div class="eurostat">eurostat</div>
+		<div class="statexp">Statistics Explained</div>
+		<!---->
+                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Main_Page/fr">
+                    <div class="statexptitle"></div>
+                </a>
+                <div class="mobile-header-buttons hidden-md hidden-lg">
+                    <button id="mobile-menu-button" class="bt-open">
+                        <span class="glyphicon glyphicon-align-justify icon-show"></span>
+                        <span class="glyphicon glyphicon-remove icon-hide"></span>
+                    </button>
+                    <button id="mobile-search-button" class="bt-open">
+                        <span class="glyphicon glyphicon-search icon-show"></span>
+                        <span class="glyphicon glyphicon-remove icon-hide"></span>
+                    </button>
+                </div>
+                <!---->
+                <div class="search-box hidden-xs hidden-sm">
+                    <form class="form-inline" action="http://ec.europa.eu/eurostat/statistics-explained/index.php"
+                        id="searchform">
+                        <input type="hidden" name="title" value="Special:Search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="search" name="search" placeholder="Rechercher"
+                                    title="Rechercher dans Statistics Explained [ctrl-option-f]" accesskey="f"
+                                    id="searchInput" class="form-control search-field" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="submit" id="mw-searchButton" class="btn search-btn search-general">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-lg-12  " id="menu-bar-container">
+                    <div class="row menu-bar-container">
+                        <div class="col-lg-4 col-md-4 head-menu-bar">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="p-navigation"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Navigation
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="Navigation">
+
+                                    <li id="n-Home">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Main_Page/fr">Page
+                                            d'accueil</a>
+                                    </li>
+
+                                    <li id="n-Statistical-themes">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Statistical_themes/fr">Thèmes
+                                            statistiques</a>
+                                    </li>
+
+                                    <li id="n-Glossary">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Thematic_glossaries/fr">Glossaire</a>
+                                    </li>
+
+                                    <li id="n-Categories">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Special:Categories">Catégories</a>
+                                    </li>
+
+                                    <li id="n-Tutorials">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Tutorial:Help_for_readers">Tutoriels</a>
+                                    </li>
+
+                                    <li id="n-help">
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Help:Contents"
+                                            rel="nofollow" title="Aide">Aide</a>
+                                    </li>
+
+                                    <li id="n-Eurostat-home">
+                                        <a href="http://ec.europa.eu/eurostat/" rel="nofollow">Page d'accueil
+                                            d'Eurostat</a>
+                                    </li>
+
+                                    <li id="n-Contact-Eurostat">
+                                        <a href="http://ec.europa.eu/eurostat/help/support" rel="nofollow">Contacter
+                                            Eurostat</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 head-menu-bar">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="p-m-onlinepub"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Publications en ligne
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="Publications en ligne">
+
+                                    <li id="n-Regional-yearbook">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Eurostat_regional_yearbook/fr">Annuaire
+                                            régional</a>
+                                    </li>
+
+                                    <li id="n-The-EU-in-the-world">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/The_EU_in_the_world">The
+                                            EU in the world</a>
+                                    </li>
+
+                                    <li id="n-Multilingual-articles">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Multilingual_articles">Multilingual
+                                            articles</a>
+                                    </li>
+
+                                    <li id="n-Other-publications">
+                                        <a
+                                            href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Online%20publications">Liste
+                                            complète</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 head-menu-bar">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="p-TOOLBOX"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Outils
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="">
+                                    <li id="t-whatlinkshere">
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:WhatLinksHere/Archive:Crime_statistics/fr"
+                                            title="Liste des pages liées à celle-ci [j]" accesskey="j">Pages liées</a>
+                                    </li>
+                                    <li id="t-specialpages">
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:SpecialPages"
+                                            title="Liste de toutes les pages spéciales [q]" accesskey="q">Pages
+                                            spéciales</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden-md hidden-lg">
+            <div class="col-sm-12 col-xs-12 mobile-search">
+                <div class="search-box search-box-mobile hidden-md hidden-lg">
+                    <form class="form-inline" action="http://ec.europa.eu/eurostat/statistics-explained/index.php"
+                        id="searchform">
+                        <input type="hidden" name="title" value="Special:Search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="search" name="search" placeholder="Rechercher"
+                                    title="Rechercher dans Statistics Explained [ctrl-option-f]" accesskey="f"
+                                    id="searchInput" class="form-control search-field" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="submit" id="mw-searchButton" class="btn search-btn search-general">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-xs-12 mobile-menu">
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-navigation"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="Navigation">
+
+                            <li id="n-Home">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Main_Page/fr">Page
+                                    d'accueil</a>
+                            </li>
+
+                            <li id="n-Statistical-themes">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Statistical_themes/fr">Thèmes
+                                    statistiques</a>
+                            </li>
+
+                            <li id="n-Glossary">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Thematic_glossaries/fr">Glossaire</a>
+                            </li>
+
+                            <li id="n-Categories">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Special:Categories">Catégories</a>
+                            </li>
+
+                            <li id="n-Tutorials">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Tutorial:Help_for_readers">Tutoriels</a>
+                            </li>
+
+                            <li id="n-help">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Help:Contents"
+                                    rel="nofollow" title="Aide">Aide</a>
+                            </li>
+
+                            <li id="n-Eurostat-home">
+                                <a href="http://ec.europa.eu/eurostat/" rel="nofollow">Page d'accueil d'Eurostat</a>
+                            </li>
+
+                            <li id="n-Contact-Eurostat">
+                                <a href="http://ec.europa.eu/eurostat/help/support" rel="nofollow">Contacter
+                                    Eurostat</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-m-onlinepub"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Publications en ligne
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="Publications en ligne">
+
+                            <li id="n-Regional-yearbook">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Eurostat_regional_yearbook/fr">Annuaire
+                                    régional</a>
+                            </li>
+
+                            <li id="n-The-EU-in-the-world">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/The_EU_in_the_world">The
+                                    EU in the world</a>
+                            </li>
+
+                            <li id="n-Multilingual-articles">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Multilingual_articles">Multilingual
+                                    articles</a>
+                            </li>
+
+                            <li id="n-Other-publications">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Online%20publications">Liste
+                                    complète</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-TOOLBOX"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Outils
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="">
+                            <li id="t-whatlinkshere">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:WhatLinksHere/Archive:Crime_statistics/fr"
+                                    title="Liste des pages liées à celle-ci [j]" accesskey="j">Pages liées</a>
+                            </li>
+                            <li id="t-specialpages">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:SpecialPages"
+                                    title="Liste de toutes les pages spéciales [q]" accesskey="q">Pages spéciales</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--END HEADER BEGIN PAGE-->
+        <!----
+<div class="onerow">
+<!---->
+        <div class="row content-row">
+            <!-- BEGIN LSF -->
+            <!---->
+            <div class="hidden-md hidden-lg hidden-xs hidden-sm sidebar content-col">
+                <!----
+		<div class="col2 sidebar">
+		<!---->
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-navigation"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="Navigation">
+
+                            <li id="n-Home">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Main_Page/fr">Page
+                                    d'accueil</a>
+                            </li>
+
+                            <li id="n-Statistical-themes">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Statistical_themes/fr">Thèmes
+                                    statistiques</a>
+                            </li>
+
+                            <li id="n-Glossary">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Thematic_glossaries/fr">Glossaire</a>
+                            </li>
+
+                            <li id="n-Categories">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Special:Categories">Catégories</a>
+                            </li>
+
+                            <li id="n-Tutorials">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Tutorial:Help_for_readers">Tutoriels</a>
+                            </li>
+
+                            <li id="n-help">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Help:Contents"
+                                    rel="nofollow" title="Aide">Aide</a>
+                            </li>
+
+                            <li id="n-Eurostat-home">
+                                <a href="http://ec.europa.eu/eurostat/" rel="nofollow">Page d'accueil d'Eurostat</a>
+                            </li>
+
+                            <li id="n-Contact-Eurostat">
+                                <a href="http://ec.europa.eu/eurostat/help/support" rel="nofollow">Contacter
+                                    Eurostat</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-m-onlinepub"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Publications en ligne
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="Publications en ligne">
+
+                            <li id="n-Regional-yearbook">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Eurostat_regional_yearbook/fr">Annuaire
+                                    régional</a>
+                            </li>
+
+                            <li id="n-The-EU-in-the-world">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/The_EU_in_the_world">The
+                                    EU in the world</a>
+                            </li>
+
+                            <li id="n-Multilingual-articles">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Multilingual_articles">Multilingual
+                                    articles</a>
+                            </li>
+
+                            <li id="n-Other-publications">
+                                <a
+                                    href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Online%20publications">Liste
+                                    complète</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 head-menu-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="p-TOOLBOX"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Outils
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="">
+                            <li id="t-whatlinkshere">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:WhatLinksHere/Archive:Crime_statistics/fr"
+                                    title="Liste des pages liées à celle-ci [j]" accesskey="j">Pages liées</a>
+                            </li>
+                            <li id="t-specialpages">
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Special:SpecialPages"
+                                    title="Liste de toutes les pages spéciales [q]" accesskey="q">Pages spéciales</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- END LSF -->
+
+            <!-- BEGIN CONTENT-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-col content article-content ">
+
+
+                <div id="content" class="content">
+
+                    <a name="top" id="top"></a>
+
+                    <div class="article-action-bar">
+
+                        <div style="height: 17px;">
+                            <div style="float: right;">
+                                <a
+                                    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fec.europa.eu%2Feurostat%2Fstatistics-explained%2Findex.php%3Ftitle%3DArchive%3ACrime_statistics%2Ffr&amp;hashtags=Eurostat">
+                                    <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #00aced;"></i>
+                                </a>
+
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fec.europa.eu%2Feurostat%2Fstatistics-explained%2Findex.php%3Ftitle%3DArchive%3ACrime_statistics%2Ffr"
+                                    target="_blank"
+                                    onclick="window.open(this.href,&#39;&#39;,&#39;scrollbars=1,resizable=1,width=400,height=620&#39;);return false;">
+                                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"
+                                        style="color: #3b5998;"></i>
+                                </a>
+                                <a href="http://plus.google.com/share?app=110&amp;url=http%3A%2F%2Fec.europa.eu%2Feurostat%2Fstatistics-explained%2Findex.php%3Ftitle%3DArchive%3ACrime_statistics%2Ffr"
+                                    target="_blank"
+                                    onclick="window.open(this.href,&#39;&#39;,&#39;scrollbars=1,resizable=1,width=400,height=620&#39;);return false;">
+                                    <i class="fa fa-google-plus fa-2x" aria-hidden="true" style="color: #d34836;"></i>
+                                </a>
+                                <span></span>
+
+                                <span id="userbar-print">
+                                    <span class=" pdfnospin" data-pageid="19239">
+                                        <i class="fa fa-print fa-2x"></i>
+                                    </span>
+                                    <span class="fa-stack pdfspin" style="display: none;">
+                                        <i class="fa fa-print fa-stack-2x"></i>
+                                        <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw "
+                                            style="margin-left: -4px;"></i>
+                                    </span>
+                                    <span>
+
+
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1 id="firstHeading" class="firstHeading">Statistiques sur la criminalité </h1>
+
+                    <div id="bodyContent" class="bodyContent">
+
+                        <!-- start content -->
+                        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+                            <dl>
+                                <dd>
+                                    <i>Données de janvier2014. Données plus récentes:
+                                        <a href="#Informations_suppl.C3.A9mentaires_Eurostat">Informations
+                                            supplémentaires Eurostat, Principaux tableaux et Base de données</a>. Mise à
+                                        jour prévue
+                                        de l’article: septembre2016. La
+                                        <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Crime_and_criminal_justice_statistics"
+                                            title="Crime and criminal justice statistics">version anglaise</a> est plus
+                                        récente.</i>
+                                </dd>
+                            </dl>
+
+                            <p>Le présent article présente les statistiques récentes de la criminalité et de la justice
+                                pénale dans l’
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Union_(EU)/fr"
+                                    gloss-content="L’&lt;b&gt;Union européenne&lt;/b&gt;, ou &lt;b&gt;UE&lt;/b&gt;, est une union économique et politique de 28 pays européens, instituée le 1&lt;sup&gt;er&lt;/sup&gt; novembre 1993 ..."
+                                    gloss-idx="0" original-title="Glossary:European Union (EU)/fr">Union européenne
+                                    (UE)</a>. Les statistiques actuellement disponibles témoignent de la diversité des
+                                systèmes
+                                judiciaires et policiers au sein de l’Union européenne. Lorsque l’on compare les
+                                statistiques sur la criminalité
+                                entre les États membres de l’Union, il faudrait se concentrer sur les évolutions dans le
+                                temps plutôt que
+                                de comparer directement des taux entre pays pour une année déterminée, car les données
+                                peuvent être influencées
+                                par toute une série de facteurs, notamment l’ampleur de la criminalisation, l’efficacité
+                                des systèmes de
+                                justice pénale et les pratiques d’enregistrement de la police. En outre, tous les crimes
+                                et délits ne sont
+                                pas enregistrés par la police.
+                            </p>
+                            <div id="toc" class="toc">
+                                <div id="toctitle">
+                                    <h2>Sommaire</h2>
+                                    <span class="toctoggle">[
+                                        <a href="#" class="internal" id="togglelink">masquer</a>]</span>
+                                </div>
+                                <ul>
+                                    <li class="toclevel-1 tocsection-1">
+                                        <a href="#Statistiques_sur_la_criminalit.C3.A9">
+                                            <span class="tocnumber">1</span>
+                                            <span class="toctext">Statistiques sur la criminalité</span>
+                                        </a>
+                                        <ul>
+                                            <li class="toclevel-2 tocsection-2">
+                                                <a href="#Principaux_r.C3.A9sultats_statistiques">
+                                                    <span class="tocnumber">1.1</span>
+                                                    <span class="toctext">Principaux résultats statistiques</span>
+                                                </a>
+                                                <ul>
+                                                    <li class="toclevel-3 tocsection-3">
+                                                        <a
+                                                            href="#Crimes_et_d.C3.A9lits_enregistr.C3.A9s_par_les_services_de_police">
+                                                            <span class="tocnumber">1.1.1</span>
+                                                            <span class="toctext">Crimes et délits enregistrés par les
+                                                                services de police</span>
+                                                        </a>
+                                                        <ul>
+                                                            <li class="toclevel-4 tocsection-4">
+                                                                <a
+                                                                    href="#Nombre_total_de_crimes_et_d.C3.A9lits_enregistr.C3.A9s">
+                                                                    <span class="tocnumber">1.1.1.1</span>
+                                                                    <span class="toctext">Nombre total de crimes et
+                                                                        délits enregistrés</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="toclevel-4 tocsection-5">
+                                                                <a href="#Crimes_et_d.C3.A9lits_violents">
+                                                                    <span class="tocnumber">1.1.1.2</span>
+                                                                    <span class="toctext">Crimes et délits
+                                                                        violents</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="toclevel-4 tocsection-6">
+                                                                <a href="#Homicides">
+                                                                    <span class="tocnumber">1.1.1.3</span>
+                                                                    <span class="toctext">Homicides</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="toclevel-4 tocsection-7">
+                                                                <a href="#Vols_avec_violence">
+                                                                    <span class="tocnumber">1.1.1.4</span>
+                                                                    <span class="toctext">Vols avec violence</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="toclevel-4 tocsection-8">
+                                                                <a href="#Infractions_contre_le_patrimoine">
+                                                                    <span class="tocnumber">1.1.1.5</span>
+                                                                    <span class="toctext">Infractions contre le
+                                                                        patrimoine</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="toclevel-4 tocsection-9">
+                                                                <a
+                                                                    href="#Infractions_en_mati.C3.A8re_de_stup.C3.A9fiants">
+                                                                    <span class="tocnumber">1.1.1.6</span>
+                                                                    <span class="toctext">Infractions en matière de
+                                                                        stupéfiants</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-10">
+                                                        <a
+                                                            href="#Le_nombre_d.E2.80.99officiers_de_police_est_rest.C3.A9_stable">
+                                                            <span class="tocnumber">1.1.2</span>
+                                                            <span class="toctext">Le nombre d’officiers de police est
+                                                                resté stable</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-11">
+                                                        <a
+                                                            href="#Augmentation_constante_de_la_population_carc.C3.A9rale">
+                                                            <span class="tocnumber">1.1.3</span>
+                                                            <span class="toctext">Augmentation constante de la
+                                                                population carcérale</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-12">
+                                                <a href="#Sources_et_disponibilit.C3.A9_des_donn.C3.A9es">
+                                                    <span class="tocnumber">1.2</span>
+                                                    <span class="toctext">Sources et disponibilité des données</span>
+                                                </a>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-13">
+                                                <a href="#Contexte">
+                                                    <span class="tocnumber">1.3</span>
+                                                    <span class="toctext">Contexte</span>
+                                                </a>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-14">
+                                                <a href="#Voir_aussi">
+                                                    <span class="tocnumber">1.4</span>
+                                                    <span class="toctext">Voir aussi</span>
+                                                </a>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-15">
+                                                <a href="#Informations_suppl.C3.A9mentaires_Eurostat">
+                                                    <span class="tocnumber">1.5</span>
+                                                    <span class="toctext">Informations supplémentaires Eurostat</span>
+                                                </a>
+                                                <ul>
+                                                    <li class="toclevel-3 tocsection-16">
+                                                        <a href="#Publications">
+                                                            <span class="tocnumber">1.5.1</span>
+                                                            <span class="toctext">Publications</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-17">
+                                                        <a href="#Base_de_donn.C3.A9es">
+                                                            <span class="tocnumber">1.5.2</span>
+                                                            <span class="toctext">Base de données</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-18">
+                                                        <a href="#Section_d.C3.A9di.C3.A9e">
+                                                            <span class="tocnumber">1.5.3</span>
+                                                            <span class="toctext">Section dédiée</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-19">
+                                                        <a href="#M.C3.A9thodologie_.2F_M.C3.A9tadonn.C3.A9es">
+                                                            <span class="tocnumber">1.5.4</span>
+                                                            <span class="toctext">Méthodologie / Métadonnées</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-20">
+                                                        <a
+                                                            href="#Source_des_donn.C3.A9es_pour_les_tableaux_et_graphiques_.28MS_Excel.29">
+                                                            <span class="tocnumber">1.5.5</span>
+                                                            <span class="toctext">Source des données pour les tableaux
+                                                                et graphiques (MS Excel)</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="toclevel-3 tocsection-21">
+                                                        <a href="#Autres_informations">
+                                                            <span class="tocnumber">1.5.6</span>
+                                                            <span class="toctext">Autres informations</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-22">
+                                                <a href="#Liens_externes">
+                                                    <span class="tocnumber">1.6</span>
+                                                    <span class="toctext">Liens externes</span>
+                                                </a>
+                                            </li>
+                                            <li class="toclevel-2 tocsection-23">
+                                                <a href="#R.C3.A9f.C3.A9rences">
+                                                    <span class="tocnumber">1.7</span>
+                                                    <span class="toctext">Références</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h2>
+                                <span class="mw-headline" id="Principaux_r.C3.A9sultats_statistiques">Principaux
+                                    résultats statistiques</span>
+                            </h2>
+                            <h3>
+                                <span class="mw-headline"
+                                    id="Crimes_et_d.C3.A9lits_enregistr.C3.A9s_par_les_services_de_police">Crimes et
+                                    délits enregistrés par les services de police</span>
+                            </h3>
+
+
+                            <table cellspacing="0" cellpadding="0" id="table1">
+                                <caption> Tableau 1: Infractions enregistrées par la police, 2002–12</caption>
+                                <thead>
+                                    <tr>
+                                        <th>N°</th>
+                                        <th>Pays</th>
+                                        <th colspan="12">Nombre (en milliers)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+
+                                        <th>
+
+                                        </th>
+                                        <th dir="ltr"></th>
+                                        <th>2002</th>
+                                        <th>2003</th>
+                                        <th>2004</th>
+                                        <th>2005</th>
+                                        <th>2006</th>
+                                        <th>2007</th>
+                                        <th>2008</th>
+                                        <th>2009</th>
+                                        <th>2010</th>
+                                        <th>2011</th>
+                                        <th>2012</th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>1</div>
+                                        </th>
+                                        <td>Belgique</td>
+                                        <td>1012,8</td>
+                                        <td>1007,8</td>
+                                        <td>1013,7</td>
+                                        <td>999,4</td>
+                                        <td>1022,8</td>
+                                        <td>1034,4</td>
+                                        <td>1043,6</td>
+                                        <td>1067,3</td>
+                                        <td>1072,0</td>
+                                        <td>1111,0</td>
+                                        <td>1073,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>2</div>
+                                        </th>
+                                        <td>Bulgarie</td>
+                                        <td>146,9</td>
+                                        <td>143,9</td>
+                                        <td>142,1</td>
+                                        <td>137,8</td>
+                                        <td>136,4</td>
+                                        <td>134,7</td>
+                                        <td>126,7</td>
+                                        <td>138,1</td>
+                                        <td>147,0</td>
+                                        <td>128,6</td>
+                                        <td>120,6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>3</div>
+                                        </th>
+                                        <td>R&eacute;p.tch&egrave;que</td>
+                                        <td>372,3</td>
+                                        <td>357,7</td>
+                                        <td>351,6</td>
+                                        <td>344,1</td>
+                                        <td>336,4</td>
+                                        <td>357,4</td>
+                                        <td>343,8</td>
+                                        <td>332,8</td>
+                                        <td>313,4</td>
+                                        <td>317,2</td>
+                                        <td>304,5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>4</div>
+                                        </th>
+                                        <td>Danemark</td>
+                                        <td>491,5</td>
+                                        <td>486,2</td>
+                                        <td>474,4</td>
+                                        <td>432,7</td>
+                                        <td>425,1</td>
+                                        <td>445,3</td>
+                                        <td>477,0</td>
+                                        <td>491,8</td>
+                                        <td>471,1</td>
+                                        <td>466,8</td>
+                                        <td>440,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>7</div>
+                                        </th>
+                                        <td>Allemagne</td>
+                                        <td>6507,4</td>
+                                        <td>6572,1</td>
+                                        <td>6633,2</td>
+                                        <td>6391,7</td>
+                                        <td>6304,2</td>
+                                        <td>6284,7</td>
+                                        <td>6114,1</td>
+                                        <td>6054,3</td>
+                                        <td>5933,3</td>
+                                        <td>5990,7</td>
+                                        <td>5997,0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>8</div>
+                                        </th>
+                                        <td>Estonie(&sup1;)</td>
+                                        <td>53,3</td>
+                                        <td>53,6</td>
+                                        <td>53,0</td>
+                                        <td>52,9</td>
+                                        <td>51,8</td>
+                                        <td>50,4</td>
+                                        <td>51,0</td>
+                                        <td>48,4</td>
+                                        <td>48,3</td>
+                                        <td>42,6</td>
+                                        <td>40,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>9</div>
+                                        </th>
+                                        <td>Irlande</td>
+                                        <td>106,4</td>
+                                        <td>103,5</td>
+                                        <td>99,2</td>
+                                        <td>102,2</td>
+                                        <td>103,2</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>10</div>
+                                        </th>
+                                        <td>Gr&egrave;ce(&sup2;)</td>
+                                        <td>441,1</td>
+                                        <td>441,8</td>
+                                        <td>405,6</td>
+                                        <td>456,0</td>
+                                        <td>463,8</td>
+                                        <td>423,4</td>
+                                        <td>417,4</td>
+                                        <td>386,9</td>
+                                        <td>334,0</td>
+                                        <td>194,0</td>
+                                        <td>194,1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>11</div>
+                                        </th>
+                                        <td>Espagne(&sup3;)</td>
+                                        <td>2183,5</td>
+                                        <td>2144,2</td>
+                                        <td>2141,3</td>
+                                        <td>2230,9</td>
+                                        <td>2267,1</td>
+                                        <td>2309,9</td>
+                                        <td>2396,9</td>
+                                        <td>2339,2</td>
+                                        <td>2297,5</td>
+                                        <td>2285,5</td>
+                                        <td>2268,9</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>12</div>
+                                        </th>
+                                        <td>France</td>
+                                        <td>4113,9</td>
+                                        <td>3974,7</td>
+                                        <td>3825,4</td>
+                                        <td>3775,8</td>
+                                        <td>3725,6</td>
+                                        <td>3589,3</td>
+                                        <td>3558,3</td>
+                                        <td>3521,3</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                        <td>:</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>13</div>
+                                        </th>
+                                        <td>Croatie</td>
+                                        <td>77,9</td>
+                                        <td>80,4</td>
+                                        <td>85,4</td>
+                                        <td>79,9</td>
+                                        <td>81,0</td>
+                                        <td>75,9</td>
+                                        <td>74,6</td>
+                                        <td>73,5</td>
+                                        <td>73,3</td>
+                                        <td>75,6</td>
+                                        <td>72,2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>14</div>
+                                        </th>
+                                        <td>Italie(⁴)</td>
+                                        <td>2231,6</td>
+                                        <td>2456,9</td>
+                                        <td>2417,7</td>
+                                        <td>2579,1</td>
+                                        <td>2771,5</td>
+                                        <td>2933,1</td>
+                                        <td>2709,9</td>
+                                        <td>2629,8</td>
+                                        <td>2621,0</td>
+                                        <td>2763,0</td>
+                                        <td>2818,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>15</div>
+                                        </th>
+                                        <td>Chypre</td>
+                                        <td>4,8</td>
+                                        <td>7,3</td>
+                                        <td>7,6</td>
+                                        <td>7,2</td>
+                                        <td>7,9</td>
+                                        <td>7,6</td>
+                                        <td>7,3</td>
+                                        <td>7,1</td>
+                                        <td>8,4</td>
+                                        <td>8,5</td>
+                                        <td>8,0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>16</div>
+                                        </th>
+                                        <td>Lettonie(⁵)</td>
+                                        <td>49,3</td>
+                                        <td>51,8</td>
+                                        <td>62,2</td>
+                                        <td>51,4</td>
+                                        <td>62,3</td>
+                                        <td>55,6</td>
+                                        <td>57,5</td>
+                                        <td>56,7</td>
+                                        <td>51,1</td>
+                                        <td>51,6</td>
+                                        <td>49,9</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>17</div>
+                                        </th>
+                                        <td>Lituanie</td>
+                                        <td>72,6</td>
+                                        <td>79,1</td>
+                                        <td>84,1</td>
+                                        <td>82,1</td>
+                                        <td>75,5</td>
+                                        <td>68,0</td>
+                                        <td>72,0</td>
+                                        <td>76,3</td>
+                                        <td>70,6</td>
+                                        <td>72,1</td>
+                                        <td>75,3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>18</div>
+                                        </th>
+                                        <td>Luxembourg</td>
+                                        <td>26,0</td>
+                                        <td>26,2</td>
+                                        <td>26,9</td>
+                                        <td>25,3</td>
+                                        <td>25,9</td>
+                                        <td>28,3</td>
+                                        <td>28,2</td>
+                                        <td>32,4</td>
+                                        <td>30,5</td>
+                                        <td>35,7</td>
+                                        <td>37,6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>19</div>
+                                        </th>
+                                        <td>Hongrie</td>
+                                        <td>420,8</td>
+                                        <td>413,3</td>
+                                        <td>418,8</td>
+                                        <td>436,5</td>
+                                        <td>425,9</td>
+                                        <td>426,9</td>
+                                        <td>408,4</td>
+                                        <td>394,0</td>
+                                        <td>447,2</td>
+                                        <td>451,4</td>
+                                        <td>472,2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>20</div>
+                                        </th>
+                                        <td>Malte</td>
+                                        <td>17,0</td>
+                                        <td>17,7</td>
+                                        <td>18,4</td>
+                                        <td>18,6</td>
+                                        <td>16,5</td>
+                                        <td>15,0</td>
+                                        <td>13,8</td>
+                                        <td>12,0</td>
+                                        <td>13,3</td>
+                                        <td>14,2</td>
+                                        <td>15,6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>21</div>
+                                        </th>
+                                        <td>Pays&shy;Bas(⁶)</td>
+                                        <td>1401,9</td>
+                                        <td>1369,3</td>
+                                        <td>1319,5</td>
+                                        <td>1348,3</td>
+                                        <td>1311,8</td>
+                                        <td>1303,8</td>
+                                        <td>1277,8</td>
+                                        <td>1254,5</td>
+                                        <td>1194,0</td>
+                                        <td>1194,1</td>
+                                        <td>1139,7</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>22</div>
+                                        </th>
+                                        <td>Autriche</td>
+                                        <td>591,6</td>
+                                        <td>643,3</td>
+                                        <td>643,6</td>
+                                        <td>605,3</td>
+                                        <td>589,5</td>
+                                        <td>594,2</td>
+                                        <td>572,7</td>
+                                        <td>591,6</td>
+                                        <td>535,7</td>
+                                        <td>540,0</td>
+                                        <td>548,0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>23</div>
+                                        </th>
+                                        <td>Pologne</td>
+                                        <td>1404,2</td>
+                                        <td>1466,6</td>
+                                        <td>1461,2</td>
+                                        <td>1380,0</td>
+                                        <td>1287,9</td>
+                                        <td>1153,0</td>
+                                        <td>1082,1</td>
+                                        <td>1129,6</td>
+                                        <td>1151,2</td>
+                                        <td>1159,6</td>
+                                        <td>1119,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>24</div>
+                                        </th>
+                                        <td>Portugal</td>
+                                        <td>391,6</td>
+                                        <td>417,4</td>
+                                        <td>416,4</td>
+                                        <td>392,7</td>
+                                        <td>399,6</td>
+                                        <td>398,6</td>
+                                        <td>430,5</td>
+                                        <td>426,0</td>
+                                        <td>422,6</td>
+                                        <td>413,7</td>
+                                        <td>403,2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>25</div>
+                                        </th>
+                                        <td>Roumanie</td>
+                                        <td>312,2</td>
+                                        <td>276,8</td>
+                                        <td>231,6</td>
+                                        <td>208,2</td>
+                                        <td>232,7</td>
+                                        <td>281,5</td>
+                                        <td>289,3</td>
+                                        <td>299,9</td>
+                                        <td>292,7</td>
+                                        <td>258,9</td>
+                                        <td>308,5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>26</div>
+                                        </th>
+                                        <td>Slov&eacute;nie</td>
+                                        <td>77,2</td>
+                                        <td>76,6</td>
+                                        <td>86,6</td>
+                                        <td>84,4</td>
+                                        <td>90,4</td>
+                                        <td>88,2</td>
+                                        <td>81,9</td>
+                                        <td>87,5</td>
+                                        <td>89,5</td>
+                                        <td>88,7</td>
+                                        <td>91,4</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>27</div>
+                                        </th>
+                                        <td>Slovaquie</td>
+                                        <td>107,4</td>
+                                        <td>111,9</td>
+                                        <td>131,2</td>
+                                        <td>123,6</td>
+                                        <td>115,2</td>
+                                        <td>110,8</td>
+                                        <td>104,8</td>
+                                        <td>104,9</td>
+                                        <td>95,3</td>
+                                        <td>92,9</td>
+                                        <td>90,4</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>28</div>
+                                        </th>
+                                        <td>Finlande(⁷)</td>
+                                        <td>435,0</td>
+                                        <td>443,5</td>
+                                        <td>445,5</td>
+                                        <td>432,3</td>
+                                        <td>416,1</td>
+                                        <td>435,8</td>
+                                        <td>440,7</td>
+                                        <td>441,4</td>
+                                        <td>431,6</td>
+                                        <td>458,3</td>
+                                        <td>425,4</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>29</div>
+                                        </th>
+                                        <td>Su&egrave;de</td>
+                                        <td>1234,8</td>
+                                        <td>1255,4</td>
+                                        <td>1248,7</td>
+                                        <td>1241,8</td>
+                                        <td>1225,0</td>
+                                        <td>1306,3</td>
+                                        <td>1377,9</td>
+                                        <td>1405,6</td>
+                                        <td>1370,4</td>
+                                        <td>1416,3</td>
+                                        <td>1402,6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>30</div>
+                                        </th>
+                                        <td>Islande(⁸)</td>
+                                        <td>19,9</td>
+                                        <td>17,5</td>
+                                        <td>16,6</td>
+                                        <td>12,0</td>
+                                        <td>13,5</td>
+                                        <td>13,0</td>
+                                        <td>14,6</td>
+                                        <td>16,0</td>
+                                        <td>14,9</td>
+                                        <td>12,6</td>
+                                        <td>11,7</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>31</div>
+                                        </th>
+                                        <td>Liechtenstein</td>
+                                        <td>1,0</td>
+                                        <td>1,1</td>
+                                        <td>1,0</td>
+                                        <td>1,1</td>
+                                        <td>1,2</td>
+                                        <td>1,1</td>
+                                        <td>1,1</td>
+                                        <td>1,2</td>
+                                        <td>1,0</td>
+                                        <td>1,1</td>
+                                        <td>1,1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>32</div>
+                                        </th>
+                                        <td>Norv&egrave;ge</td>
+                                        <td>319,5</td>
+                                        <td>303,8</td>
+                                        <td>287,8</td>
+                                        <td>275,7</td>
+                                        <td>277,0</td>
+                                        <td>271,7</td>
+                                        <td>264,2</td>
+                                        <td>277,1</td>
+                                        <td>270,7</td>
+                                        <td>264,2</td>
+                                        <td>273,5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>33</div>
+                                        </th>
+                                        <td>Suisse(⁷)</td>
+                                        <td>356,8</td>
+                                        <td>379,3</td>
+                                        <td>389,4</td>
+                                        <td>352,7</td>
+                                        <td>335,2</td>
+                                        <td>326,2</td>
+                                        <td>323,2</td>
+                                        <td>676,3</td>
+                                        <td>656,9</td>
+                                        <td>693,0</td>
+                                        <td>750,4</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>34</div>
+                                        </th>
+                                        <td>Mont&eacute;n&eacute;gro</td>
+                                        <td>8,9</td>
+                                        <td>8,6</td>
+                                        <td>8,2</td>
+                                        <td>9,6</td>
+                                        <td>9,6</td>
+                                        <td>9,3</td>
+                                        <td>8,3</td>
+                                        <td>8,1</td>
+                                        <td>7,0</td>
+                                        <td>6,1</td>
+                                        <td>5,8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>35</div>
+                                        </th>
+                                        <td>ARYdeMac&eacute;doine</td>
+                                        <td>18,3</td>
+                                        <td>22,5</td>
+                                        <td>22,7</td>
+                                        <td>22,6</td>
+                                        <td>22,0</td>
+                                        <td>26,2</td>
+                                        <td>28,3</td>
+                                        <td>27,3</td>
+                                        <td>28,5</td>
+                                        <td>29,5</td>
+                                        <td>29,9</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>36</div>
+                                        </th>
+                                        <td>Serbie</td>
+                                        <td>95,6</td>
+                                        <td>90,4</td>
+                                        <td>99,9</td>
+                                        <td>102,1</td>
+                                        <td>99,2</td>
+                                        <td>104,9</td>
+                                        <td>106,0</td>
+                                        <td>102,4</td>
+                                        <td>101,1</td>
+                                        <td>99,5</td>
+                                        <td>96,1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>37</div>
+                                        </th>
+                                        <td>Turquie(⁹)</td>
+                                        <td>438,7</td>
+                                        <td>472,2</td>
+                                        <td>507,5</td>
+                                        <td>667,8</td>
+                                        <td>975,1</td>
+                                        <td>970,6</td>
+                                        <td>1012,3</td>
+                                        <td>1288,1</td>
+                                        <td>1521,7</td>
+                                        <td>1652,8</td>
+                                        <td>1904,5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>Les statistiques sur les crimes et délits mis en évidence dans le présent article
+                                concernent les infractions
+                                enregistrées par la police dans les États membres de l’Union et dans certains autres
+                                pays européens. Ces
+                                données ne prétendent pas décrire l’ensemble des crimes et délits commis en Europe:
+                                certains crimes et délits
+                                ne sont pas signalés et l’évolution des pourcentages de certaines infractions
+                                particulières peut être due
+                                à de nouvelles stratégies policières ou à des changements de méthodologie.
+                            </p>
+                            <p>D’une manière générale, il n’y a pas de correspondance manifeste entre les types et les
+                                niveaux de crimes et
+                                délits entre les différents pays, puisque le système judiciaire et pénal peut varier
+                                d’un pays à l’autre,
+                                notamment en ce qui concerne les méthodes de signalement, d’enregistrement et de calcul
+                                des crimes et délits,
+                                le pourcentage de crimes et délits signalés par rapport aux crimes et délits non
+                                signalés et la définition
+                                des crimes et délits
+                                <sup id="cite_ref-1" class="reference">
+                                    <a href="#cite_note-1">[1]</a>
+                                </sup> — voir la section intitulée
+                                <a href="#Sources_et_disponibilit.C3.A9_des_donn.C3.A9es">Sources et disponibilité des
+                                    données</a>.
+                            </p>
+                            <p>Les données nationales ont été agrégées pour fournir des estimations au niveau de l’Union
+                                européenne dans son
+                                ensemble, de manière à définir des tendances générales. Toute conclusion relative à
+                                l’Union ou à des États
+                                membres devrait se fonder sur les tendances dans le temps.
+                            </p>
+                            <h4>
+                                <span class="mw-headline"
+                                    id="Nombre_total_de_crimes_et_d.C3.A9lits_enregistr.C3.A9s">Nombre total de crimes
+                                    et délits enregistrés</span>
+                            </h4>
+                            <p>Les données relatives au nombre total de crimes et délits enregistrés ne concernent que
+                                le pénal. Les infractions
+                                moins graves (contraventions) ne sont pas prises enc compte. Le nombre de crimes et
+                                délits enregistrés au
+                                sein de l’UE-28 diminue continuellement depuis 2003 (voir le graphique1): en 2012,
+                                l’UE-28 affiche de recul
+                                de 12% des crimes et délits par rapport au chiffre enregistré neuf ans plus tôt. Il y a
+                                lieu de signaler
+                                que ces chiffres relatifs au nombre total de crimes et délits concernent une gamme plus
+                                large d’infractions
+                                que les chiffres présentés en détail dans les analyses qui suivent – à savoir, crimes et
+                                délits violents,
+                                homicides, vols avec violence, infractions contre le patrimoine et trafic de stupéfiants
+                                — et que la somme
+                                des infractions sélectionnées ne correspond pas au total de l’ensemble des crimes et
+                                délits enregistrés.
+                            </p>
+                            <p>Au cours de ces dernières années, une tendance générale à la baisse a été enregistrée en
+                                ce qui concerne les
+                                crimes et délits enregistrés: la plupart des types de crimes et délits enregistrés par
+                                la police au sein
+                                de l’UE-28 ont reculé entre 2007 et 2012 (voir le graphique2). Si les crimes et délits
+                                relevant du trafic
+                                de stupéfiants, des vols avec violence et des crimes et délits violents ont diminué de
+                                4% à 10% pendant la
+                                période 2007-2012, le nombre de vols de véhicules à moteur a affiché une diminution
+                                beaucoup plus nette durant
+                                la même période (-37%), ce qui confirme une tendance à plus long terme. En revanche, les
+                                cambriolages dans
+                                les lieux d’habitation constituent une catégorie de crimes et délits qui accuse une
+                                tendance à la hausse
+                                au sein de l’UE-28: par rapport à 2007, le nombre de cambriolages dans les lieux
+                                d’habitation a augmenté
+                                de 14% en 2012.
+                            </p>
+                            <p>Le tableau1 indique que dix États membres de l’Union ont enregistré une augmentation du
+                                nombre de crimes et
+                                délits entre 2007 et 2012 (séries chronologiques non disponibles pour l’Irlande et la
+                                France). En revanche,
+                                le nombre total de crimes et délits enregistrés a diminué dans les 16 autres États
+                                membres de l’Union. Les
+                                changements les plus évidents ont été enregistrés en Grèce (-54%), dans certaines
+                                parties du Royaume-Uni
+                                (-25% en Angleterre et au pays de Galles et -29% en Écosse), en Estonie (-19%) et en
+                                Slovaquie (-18%). Il
+                                y a lieu de noter que les données pour la Grèce sont caractérisées par une rupture des
+                                séries, ce qui pourrait
+                                en partie expliquer la forte diminution.
+                            </p>
+                            <p>Ce sont l’Angleterre et le pays de Galles qui ont eu la plus grande influence sur la
+                                tendance à la baisse au
+                                sein de l’UE-28 au cours de cette période, étant donné qu’ils ont enregistré la
+                                diminution la plus forte
+                                en ce qui concerne le nombre de crimes et délits enregistrés, lequel a chuté de plus de
+                                1,2million entre
+                                2007 et 2012. Parmi les pays tiers figurant dans le tableau1, en Turquie, le nombre
+                                total de crimes et délits
+                                enregistrés par la police a augmenté de 96% entre 2007 et 2012.
+                            </p>
+                            <h4>
+                                <span class="mw-headline" id="Crimes_et_d.C3.A9lits_violents">Crimes et délits
+                                    violents</span>
+                            </h4>
+                            <p>Les données relatives aux crimes et délits violents englobent la violence contre les
+                                personnes (comme les agressions
+                                physiques), les vols avec violence (vols par la force ou menaces de recours à la force)
+                                et les délits sexuels
+                                (y compris les viols et les agressions sexuelles). Il est difficile d’analyser en détail
+                                ce type de crimes
+                                et délits parce que tous les États membres de l’Union n’utilisent pas la définition
+                                standard. En outre, étant
+                                donné que les données relatives aux crimes et délits violents commis en 2012 en France
+                                excluent les crimes
+                                et délits enregistrés par la gendarmerie (rupture de série chronologique), les
+                                comparaisons avec le nombre
+                                total de crimes et délits violents enregistrés pour l’année de référence 2011 seraient
+                                trompeuses. Cependant,
+                                la tendance générale pour l’UE-28 fait état d’un déclin d’environ 10% du nombre de
+                                crimes et délits violents
+                                enregistrés entre 2007 et 2012. Cette baisse générale est fortement influencée par les
+                                données concernant
+                                l’Angleterre et le pays de Galles, où une baisse de 166000crimes et délits violents a
+                                été enregistrée entre
+                                2007 et 2012 (tableau2). Si on s’intéresse aux autres États membres de l’Union, la
+                                situation semble hétérogène,
+                                caractérisée par des augmentations considérables entre 2007 et 2012 au Luxembourg (38%),
+                                en Hongrie (26%)
+                                et au Danemark (23%) et des diminutions importantes en Lituanie (-42%), en Croatie
+                                (-33%), en Écosse (-32%),
+                                en Lettonie et en Slovaquie (-30% dans les deux pays), ainsi qu’à Malte (-27%).
+                            </p>
+                            <h4>
+                                <span class="mw-headline" id="Homicides">Homicides</span>
+                            </h4>
+
+                            <table cellspacing="0" cellpadding="0" id="table2">
+                                <caption>Population carcérale, moyenne par an, 2007–09 et 2010–12
+                                    <br> (pour 100 000 habitants)</caption>
+                                <thead>
+                                    <tr>
+                                        <th>N°</th>
+                                        <th>Pays</th>
+                                        <th>2007&ndash;09</th>
+                                        <th>2010&ndash;12</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th>
+                                            <div>4</div>
+                                        </th>
+                                        <td>Lettonie</td>
+                                        <td>312</td>
+                                        <td>312</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>5</div>
+                                        </th>
+                                        <td>Lituanie</td>
+                                        <td>247</td>
+                                        <td>307</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>6</div>
+                                        </th>
+                                        <td>Estonie</td>
+                                        <td>266</td>
+                                        <td>253</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>7</div>
+                                        </th>
+                                        <td>R&eacute;p.tch&egrave;que</td>
+                                        <td>198</td>
+                                        <td>217</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>8</div>
+                                        </th>
+                                        <td>Pologne</td>
+                                        <td>228</td>
+                                        <td>214</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>9</div>
+                                        </th>
+                                        <td>Slovaquie</td>
+                                        <td>159</td>
+                                        <td>197</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>10</div>
+                                        </th>
+                                        <td>Hongrie</td>
+                                        <td>148</td>
+                                        <td>169</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>11</div>
+                                        </th>
+                                        <td>Angleterreet
+                                            <br />paysdeGalles(UK)</td>
+                                        <td>151</td>
+                                        <td>154</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>12</div>
+                                        </th>
+                                        <td>Ecosse(UK)(&sup1;)</td>
+                                        <td>150</td>
+                                        <td>154</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>13</div>
+                                        </th>
+                                        <td>Espagne</td>
+                                        <td>158</td>
+                                        <td>152</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>14</div>
+                                        </th>
+                                        <td>Roumanie</td>
+                                        <td>132</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>15</div>
+                                        </th>
+                                        <td>Malte</td>
+                                        <td>126</td>
+                                        <td>143</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>16</div>
+                                        </th>
+                                        <td>Bulgarie</td>
+                                        <td>132</td>
+                                        <td>132</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>17</div>
+                                        </th>
+                                        <td>Luxembourg</td>
+                                        <td>139</td>
+                                        <td>126</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>18</div>
+                                        </th>
+                                        <td>Portugal</td>
+                                        <td>106</td>
+                                        <td>120</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>19</div>
+                                        </th>
+                                        <td>Croatie</td>
+                                        <td>108</td>
+                                        <td>116</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>20</div>
+                                        </th>
+                                        <td>Italie</td>
+                                        <td>98</td>
+                                        <td>113</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>21</div>
+                                        </th>
+                                        <td>Gr&egrave;ce</td>
+                                        <td>105</td>
+                                        <td>112</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>22</div>
+                                        </th>
+                                        <td>France</td>
+                                        <td>99</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>23</div>
+                                        </th>
+                                        <td>Autriche</td>
+                                        <td>101</td>
+                                        <td>104</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>24</div>
+                                        </th>
+                                        <td>Belgique</td>
+                                        <td>93</td>
+                                        <td>101</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>25</div>
+                                        </th>
+                                        <td>IrlandeduNord(UK)</td>
+                                        <td>84</td>
+                                        <td>91</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>26</div>
+                                        </th>
+                                        <td>Pays&shy;Bas</td>
+                                        <td>90</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>27</div>
+                                        </th>
+                                        <td>Allemagne</td>
+                                        <td>89</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>28</div>
+                                        </th>
+                                        <td>Irlande</td>
+                                        <td>76</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>29</div>
+                                        </th>
+                                        <td>Chypre</td>
+                                        <td>84</td>
+                                        <td>78</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>30</div>
+                                        </th>
+                                        <td>Danemark</td>
+                                        <td>66</td>
+                                        <td>72</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>31</div>
+                                        </th>
+                                        <td>Su&egrave;de</td>
+                                        <td>74</td>
+                                        <td>71</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>32</div>
+                                        </th>
+                                        <td>Slov&eacute;nie</td>
+                                        <td>66</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div>33</div>
+                                        </th>
+                                        <td>Finlande</td>
+                                        <td>63</td>
+                                        <td>60</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>L’homicide est défini comme le fait de tuer intentionnellement une personne et inclut le
+                                meurtre, l’homicide
+                                involontaire, l’euthanasie et l’infanticide. Ne sont pas inclus le décès causé par une
+                                conduite dangereuse,
+                                l’avortement et le suicide assisté. Les homicides sont signalés de manière assez
+                                constante et les définitions
+                                varient moins d’un pays à l’autre que pour les autres types de crimes et de délits. Les
+                                résultats présentés
+                                concernent les homicides commis, à l’exception de la Lettonie où les données englobent
+                                aussi les tentatives
+                                d’homicide. Dans certains pays, la police enregistre dans la catégorie des homicides
+                                tout décès qui ne peut
+                                être immédiatement attribué à d’autres causes. Il est dès lors possible que cette
+                                catégorie soit surestimée.
+                                Le nombre d’homicides enregistrés par pays est indiqué dans le tableau3. Le pourcentage
+                                d’homicides pour
+                                100000habitants (voir le graphique3) révèle une tendance à la baisse si l’on compare les
+                                pourcentages moyens
+                                pour la période 2007–2009 avec ceux concernant la période 2010–2012: une diminution est
+                                visible pour tous
+                                les pays à l’exception de la Grèce, de Malte et de l’Autriche. Malgré des diminutions
+                                des pourcentages d’homicide
+                                dans les trois
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Baltic_Member_States/fr"
+                                    gloss-content="L’Union européenne compte parmi ses membres trois &lt;b&gt;États baltes&lt;/b&gt;: Estonie (EE), Lettonie (LV) et Lituanie (LT).
+&lt;br /&gt;
+
+&lt;h2&gt;&lt;span ..." gloss-idx="1" original-title="Glossary:Baltic Member States/fr"> États membres baltes</a>, le
+                                nombre d’homicides pour 100000habitants s’est maintenu à un niveau plus élevé
+                                dans ces pays que dans l’ensemble des autres États membres.
+                            </p>
+                            <h4>
+                                <span class="mw-headline" id="Vols_avec_violence">Vols avec violence</span>
+                            </h4>
+                            <p>Le vol avec violence est un type particulier de crime et délit violent, défini comme
+                                étant le vol par la force
+                                ou la menace de recours à la force. Il englobe les agressions (vols à l’arraché) et les
+                                vols avec violence.
+                                Étant donné que les données relatives aux vols avec violence commis en 2012 en France
+                                excluent les crimes
+                                et délits enregistrés par la gendarmerie (rupture de série chronologique), les
+                                comparaisons avec le nombre
+                                total de vols avec violence enregistrés pour l’année de référence 2011 seraient
+                                trompeuses.
+                            </p>
+                            <p>Dans l’ensemble de l’UE-28, le nombre de vols avec violence est resté assez stable,
+                                enregistrant une diminution
+                                de 4% entre 2007 et 2012. Malgré la diminution significative du nombre de vols avec
+                                violence signalés dans
+                                les États membres baltes (en moyenne -46% pour la période 2007–2012) et en Écosse
+                                (-40%), quelques pays ont
+                                connu des augmentations très importantes. Entre 2007 et 2012, le nombre de vols avec
+                                violence a plus que
+                                doublé à Chypre, au Danemark et en Grèce (voir le tableau4).
+                            </p>
+                            <h4>
+                                <span class="mw-headline" id="Infractions_contre_le_patrimoine">Infractions contre le
+                                    patrimoine</span>
+                            </h4>
+                            <p>Les infractions contre le patrimoine couvrent le vol ou la destruction de patrimoine. Les
+                                données relatives
+                                aux cambriolages dans un lieu d’habitation et aux vols de véhicules à moteur sont
+                                présentées dans les tableaux5
+                                et 6, qui montrent des tendances différentes. Étant donné que les données relatives aux
+                                cambriolages dans
+                                un lieu d’habitation et aux vols de véhicules à moteur commis en 2012 en France excluent
+                                les crimes et délits
+                                enregistrés par la gendarmerie (rupture de série chronologique), les comparaisons avec
+                                le nombre total de
+                                cambriolages dans un lieu d’habitation et de vols de véhicules à moteur enregistrés pour
+                                l’année de référence
+                                2011 seraient trompeuses. Les cambriolages dans un lieu d’habitation sont définis comme
+                                l’accès à une habitation
+                                par la force afin d’y voler des biens. Entre 2007 et 2012, ils ont augmenté de 14% au
+                                sein de l’UE-28 dans
+                                son ensemble (graphique2). Parmi les États membres de l’Union dont les séries de données
+                                sont continues pendant
+                                cette période, les augmentations les plus importantes en ce qui concerne le nombre de
+                                cambriolages dans un
+                                lieu d’habitation signalés ont été enregistrées en Grèce (76%), en Espagne (74%), en
+                                Italie (42%), en Roumanie
+                                (41%) et en Croatie (40%). Inversement, des diminutions importantes ont été signalées
+                                par la Lituanie (-36%)
+                                et la Slovaquie (-29%) au cours de la période de cinq ans couverte par l’indice du
+                                tableau5. Il convient
+                                de noter qu’il y a une rupture des séries pour l’Espagne, ce qui pourrait en partie
+                                expliquer l’augmentation
+                                particulièrement élevée.
+                            </p>
+                            <p>Les vols de véhicules à moteur couvrent les vols de voitures, de motocyclettes, de bus,
+                                de camions ainsi que
+                                de véhicules agricoles et de ceux utilisés dans le secteur de la construction. Le nombre
+                                de vols de véhicules
+                                à moteur a continuellement baissé au sein de l’Union européenne au cours de ces
+                                dernières années, en particulier
+                                en raison d’améliorations techniques apportées aux dispositifs antivol. Le nombre
+                                d’infractions enregistrées
+                                au sein de l’UE-28 dans cette catégorie de crimes et délits a diminué de 37% entre 2007
+                                et 2012, et les vols
+                                de véhicules à moteur ont diminué de plus de moitié en Angleterre et au pays de Galles
+                                ainsi qu’en Écosse
+                                (-53% dans les deux pays). En Grèce, le nombre de vols de véhicules à moteur a augmenté
+                                de 38% entre 2007
+                                et 2012 (tableau6).
+                            </p>
+                            <h4>
+                                <span class="mw-headline"
+                                    id="Infractions_en_mati.C3.A8re_de_stup.C3.A9fiants">Infractions en matière de
+                                    stupéfiants</span>
+                            </h4>
+                            <p>Le trafic de stupéfiants est un sous-ensemble de la catégorie plus large des infractions
+                                en matière de stupéfiants.
+                                Cette catégorie inclut la possession, la culture, la production, la fourniture, le
+                                transport, l’importation,
+                                l’exportation et le financement de manière illégale d’opérations liées aux stupéfiants.
+                                Étant donné que les
+                                données relatives au trafic de stupéfiants pour l’année 2012 en France excluent les
+                                crimes et délits enregistrés
+                                par la gendarmerie (rupture de série chronologique), les comparaisons avec le nombre
+                                total de crimes et délits
+                                liés au trafic de stupéfiants enregistrés pour l’année de référence 2011 seraient
+                                trompeuses Par rapport
+                                aux tendances enregistrées pour plusieurs autres types de crimes et délits, le nombre
+                                d’infractions en matière
+                                de trafic de stupéfiants a enregistré une diminution relativement faible (-5%) au sein
+                                de l’UE-28 entre 2007
+                                et 2012 (voir le graphique2). Une diminution considérable du trafic de stupéfiants a été
+                                enregistrée en Écosse
+                                (-48%) et en Estonie (-40%) — voir le tableau7 —, tandis que des diminutions plus
+                                faibles ont été enregistrées
+                                dans certains des plus grands États membres de l’Union, notamment en Allemagne (-26%).
+                                Une réduction particulièrement
+                                importante a été enregistrée en Hongrie, principalement en raison d’une rupture des
+                                séries. Cependant, la
+                                plupart des États membres (18 États membres, ainsi que l’Irlande du Nord et l’Angleterre
+                                et le pays de Galles)
+                                ont enregistré une augmentation du nombre global d’infractions en matière de trafic de
+                                stupéfiants entre
+                                2007 et 2012. Les augmentations les plus importantes ont été observées en Lituanie et en
+                                Suède, où le nombre
+                                d’infractions liées au trafic de stupéfiants a plus que doublé entre 2007 et 2012. En
+                                outre, parmi les pays
+                                tiers figurant dans le tableau7, en Turquie, le nombre de crimes et délits liés au
+                                trafic de stupéfiants
+                                a plus que triplé entre 2007 et 2012.
+                            </p>
+                            <h3>
+                                <span class="mw-headline"
+                                    id="Le_nombre_d.E2.80.99officiers_de_police_est_rest.C3.A9_stable">Le nombre
+                                    d’officiers de police est resté stable</span>
+                            </h3>
+                            <p>La notion d’officiers de police recouvre les membres de la police judiciaire, de la
+                                police de la route, de
+                                la police aux frontières, de la gendarmerie, de la police en uniforme, de la police
+                                municipale et les gardiens
+                                de la paix, et exclut le personnel civil, les agents des douanes, les membres de la
+                                police fiscale, de la
+                                police militaire et de la police des services secrets, les réserves mobilisables pour
+                                des tâches spéciales,
+                                les élèves officiers et la police des tribunaux. Cependant, il convient de faire
+                                remarquer que cette définition
+                                peut varier d’une juridiction à l’autre.
+                            </p>
+                            <p>Le nombre total d’officiers de police au sein de l’UE-28 était stable ces dernières
+                                années. Si l’on exclut
+                                l’Irlande du Nord et la Bulgarie, le nombre d’officiers de police au sein de l’Union a
+                                augmenté de 2,3% au
+                                cours de la période 2007–2012 (voir le tableau8). En 2012, ce sont l’Italie, l’Espagne
+                                et l’Allemagne qui
+                                comptaient le plus grand nombre d’officiers de police au sein de l’Union européenne.
+                                Ensemble, ils représentaient
+                                45% du nombre total d’officiers de police au sein de l’Union.
+                            </p>
+                            <p>Par rapport à la taille de la population, le nombre le plus élevé d’officiers de police
+                                au cours de la période
+                                2010–2012 a été enregistré à Chypre (631 pour 100000habitants), tandis que le nombre le
+                                plus bas l’a été
+                                en Finlande (151 pour 100000habitants) — voir le graphique4. Entre 2007–2009 et
+                                2010–2012, le nombre d’officiers
+                                de police par rapport à la taille de la population a considérablement augmenté en
+                                Hongrie et en Estonie (même
+                                s’il existait des ruptures de séries dans ces deux États membres au cours de cette
+                                période), ainsi qu’en
+                                Belgique, en Espagne et en Grèce. En revanche, au cours de cette même période, la France
+                                et Chypre ont enregistré
+                                les diminutions les plus importantes en ce qui concerne le nombre d’officiers de police
+                                par rapport à la
+                                taille de leur population.
+                            </p>
+                            <h3>
+                                <span class="mw-headline"
+                                    id="Augmentation_constante_de_la_population_carc.C3.A9rale">Augmentation constante
+                                    de la population carcérale</span>
+                            </h3>
+                            <p>Les données relatives à la population carcérale concernent les détenus (adultes et
+                                mineurs) reconnus coupables
+                                et les détenus en détention préventive dans tous les types d’établissements
+                                pénitentiaires, mais excluent
+                                les détenus pour raison administrative qui ne sont pas accusés d’un délit (individus
+                                détenus pendant la période
+                                de détermination de leur statut d’immigration, par exemple).
+                            </p>
+                            <p>En 2012, l’UE-28 (à l’exclusion de l’Écosse) comptait environ 643000détenus et, entre
+                                2007 et 2012, le nombre
+                                total de détenus au sein de l’UE-28 (toujours à l’exclusion de l’Écosse) a augmenté de
+                                7% (voir le tableau9).
+                                Pendant cette période, la population carcérale a augmenté d’un peu plus de la moitié à
+                                Malte (53%) et d’un
+                                peu plus d’un tiers en Italie et en Slovaquie (respectivement 35% et 34%). Parmi les
+                                pays tiers figurant
+                                dans le tableau9, des augmentations importantes (en termes relatifs) ont été
+                                enregistrées au Liechtenstein
+                                (97%), au Monténégro (51%) et en Turquie (41% entre 2007 et 2011). Il convient de faire
+                                remarquer que l’augmentation
+                                importante enregistrée au Monténégro peut en partie s’expliquer par une rupture des
+                                séries.
+                            </p>
+                            <p>Une analyse du nombre de détenus par rapport à la taille de la population est présentée
+                                dans le graphique5
+                                (moyenne par an pour les périodes 2007–2009 et 2010–2012). Pour ces deux périodes, les
+                                trois États membres
+                                baltes ont enregistré les pourcentages les plus élevés de détenus par habitant: entre
+                                ces deux périodes,
+                                le pourcentage est resté stable en Lettonie, il a augmenté en Lituanie et a baissé en
+                                Estonie. À l’exclusion
+                                de l’Écosse, pour la période 2010–2012, la moyenne de l’UE-28 était de 128détenus pour
+                                100000habitants, contre
+                                125 au cours de la période 2007–2009. Les pourcentages les plus bas au cours de la
+                                période 2010–2012 ont
+                                été enregistrés dans les
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Nordic_Member_States/fr"
+                                    gloss-content="L’Union européenne compte trois &lt;b&gt;États membres nordiques&lt;/b&gt;: le Danemark (DK), la Suède (SE) et la Finlande ..."
+                                    gloss-idx="2" original-title="Glossary:Nordic Member States/fr">États membres
+                                    nordiques</a> et en Slovénie (entre 60 et 72détenus pour 100000habitants).
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="Sources_et_disponibilit.C3.A9_des_donn.C3.A9es">Sources et
+                                    disponibilité des données</span>
+                            </h2>
+                            <p>
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Eurostat/fr"
+                                    gloss-content="&lt;b&gt;Eurostat&lt;/b&gt;, l’office statistique de l’Union européenne (EU), est basé à Luxembourg (LU). Il publie des statistiques officielles ..."
+                                    gloss-idx="3" original-title="Glossary:Eurostat/fr">Eurostat</a> publie des
+                                statistiques sur la criminalité et les systèmes de justice pénale depuis 1950 en
+                                ce qui concerne le nombre total de crimes et délits enregistrés et depuis 1993 pour un
+                                ensemble d’infractions
+                                spécifiques. La base de données inclut également les statistiques relatives à la
+                                population carcérale depuis
+                                1987 et au nombre d’officiers de police depuis 1993.
+                            </p>
+                            <p>Les données du Royaume-Uni sont déclarées pour les juridictions distinctes de
+                                l’Angleterre et du pays de Galles,
+                                de l’Écosse et de l’Irlande du Nord.
+                            </p>
+                            <p>En règle générale, les comparaisons des statistiques sur la criminalité et les systèmes
+                                de justice pénale devraient
+                                être basées sur des tendances plutôt que sur des niveaux, en supposant que les
+                                caractéristiques du système
+                                d’enregistrement d’un pays restent relativement constantes dans le temps. On constate
+                                cependant de nombreuses
+                                ruptures dans les
+                                <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Time_series/fr"
+                                    gloss-content="Une &lt;b&gt;série chronologique&lt;/b&gt; (ou &lt;b&gt;temporelle&lt;/b&gt;) est une suite de données montrant l’évolution de la valeur d’une variable sur une ..."
+                                    gloss-idx="4" original-title="Glossary:Time series/fr">séries chronologiques</a> et
+                                d’autres changements dans les méthodologies/définitions.
+                            </p>
+                            <p>La comparaison des statistiques sur la criminalité entre les pays peut être influencée
+                                par divers facteurs,
+                                notamment:
+                            </p>
+                            <ul>
+                                <li>les systèmes juridiques et les systèmes de justice pénale différents;
+                                </li>
+                                <li>la proportion de crimes et délits déclarés à la police et enregistrés par elle;
+                                </li>
+                                <li>les différences concernant le moment où les crimes et délits sont enregistrés (par
+                                    exemple, lors de la déclaration
+                                    à la police, lors de l’identification du suspect, etc.);
+                                </li>
+                                <li>les différences dans les règles concernant la prise en considération des récidives;
+                                </li>
+                                <li>les différences dans la liste des infractions comprises dans les chiffres globaux
+                                    sur la criminalité.
+                                </li>
+                            </ul>
+                            <p>Par conséquent, les informations présentées doivent être analysées avec circonspection.
+                            </p>
+                            <p>Les chiffres relatifs à la population carcérale peuvent également être influencés par une
+                                série de facteurs,
+                                notamment:
+                            </p>
+                            <ul>
+                                <li>le nombre d’affaires traitées par les tribunaux;
+                                </li>
+                                <li>le pourcentage de criminels reconnus coupables faisant l’objet d’une peine privative
+                                    de liberté;
+                                </li>
+                                <li>la durée des peines prononcées;
+                                </li>
+                                <li>la taille de la population en détention provisoire;
+                                </li>
+                                <li>la date à laquelle l’enquête a été menée (surtout dans les pays où les grâces ou
+                                    d’autres arrangements concernant
+                                    une sortie de prison anticipée s’appliquent).
+                                </li>
+                            </ul>
+                            <p>La population carcérale est le nombre total de détenus adultes et mineurs (y compris en
+                                détention provisoire)
+                                au 1erseptembre de chaque année. Sont incluses les personnes détenues dans les
+                                établissements de l’administration
+                                pénitentiaire, dans les institutions destinées aux mineurs ou aux toxicomanes, et dans
+                                les instituts psychiatriques
+                                ou dans d’autres établissements hospitaliers.
+                            </p>
+                            <p>Des travaux sont en cours pour améliorer la comparabilité des statistiques sur la
+                                criminalité au sein des États
+                                membres de l’Union. La conception d’un système plus comparable de statistiques sur la
+                                criminalité et la justice
+                                pénale est exposée dans les grandes lignes dans une communication de la Commission
+                                européenne intitulée «
+                                <a rel="nofollow" class="external text"
+                                    href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:52011DC0713:FR:NOT">Évaluation
+                                    de la criminalité dans l’UE: Plan d’action statistique 2011–2015</a>» [COM(2011) 713
+                                final].
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="Contexte">Contexte</span>
+                            </h2>
+                            <p>La suppression progressive des contrôles aux frontières intérieures de l’Union européenne
+                                a considérablement
+                                facilité la libre circulation des citoyens européens, mais elle a également peut-être
+                                permis aux criminels
+                                d’opérer plus facilement, notamment parce que les compétences des forces de l’ordre et
+                                des systèmes de justice
+                                pénale restent généralement limitées au territoire national.
+                            </p>
+                            <p>Depuis l’adoption du traité d’Amsterdam, l’Union européenne s’est donné comme objectif de
+                                devenir un espace
+                                commun de liberté, de sécurité et de justice. Cet objectif a été repris dans le
+                                programme de La Haye en 2004,
+                                lequel a déterminé dix domaines de priorité: renforcer les droits fondamentaux et la
+                                citoyenneté; lutter
+                                contre le terrorisme; définir une approche équilibrée concernant la migration; élaborer
+                                une gestion intégrée
+                                des frontières extérieures de l’Union; mettre en place une procédure commune en matière
+                                d’asile; maximiser
+                                les retombées positives de l’immigration; trouver un juste équilibre entre la protection
+                                de la vie privée
+                                et la sécurité lors du partage d’informations; élaborer un concept stratégique
+                                concernant la lutte contre
+                                la criminalité organisée; garantir un véritable espace européen de justice; et partager
+                                les responsabilités
+                                et veiller à la solidarité.
+                            </p>
+                            <p>La reconnaissance mutuelle des décisions des juridictions nationales devrait devenir la
+                                pierre angulaire de
+                                la coopération judiciaire en matière pénale, grâce à une série d’outils qui ont été
+                                conçus pour faciliter
+                                la coopération transfrontalière concrète.
+                            </p>
+                            <p>Dans le cadre de l’harmonisation et du développement des statistiques sur la criminalité
+                                et les systèmes de
+                                justice pénale, les États membres de l’Union ont convenu de rapprocher les définitions
+                                des infractions et
+                                le niveau de sanction de certains types d’infractions.
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="Voir_aussi">Voir aussi</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Crime_trends_in_detail&amp;action=edit&amp;redlink=1"
+                                        class="new" title="Crime trends in detail (page inexistante)">Crime trends in
+                                        detail</a> (en anglais)
+                                </li>
+                                <li>
+                                    <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_public_order_and_safety"
+                                        title="Government expenditure on public order and safety">Government expenditure
+                                        on public order and safety</a> (en anglais)
+                                </li>
+                                <li>
+                                    <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Social_protection_statistics/fr"
+                                        title="Social protection statistics/fr">Statistiques sur la protection
+                                        sociale</a>
+                                </li>
+                            </ul>
+                            <h2>
+                                <span class="mw-headline" id="Informations_suppl.C3.A9mentaires_Eurostat">Informations
+                                    supplémentaires Eurostat</span>
+                            </h2>
+                            <h3>
+                                <span class="mw-headline" id="Publications">Publications</span>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://ec.europa.eu/eurostat/product?code=KS-SF-13-018&amp;language=en">Trends
+                                        in crime and criminal justice, 2010</a> — Statistics in focus 18/2013 (en
+                                    anglais)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://ec.europa.eu/eurostat/product?code=KS-RA-13-005&amp;language=en">Trafficking
+                                        in human beings — 2013 edition</a> — document de travail (en anglais)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://ec.europa.eu/eurostat/product?code=KS-TC-13-007&amp;language=en">Money
+                                        Laundering in Europe — 2013 edition</a> — document de travail (en anglais)
+                                </li>
+                            </ul>
+
+
+                            <h3>
+                                <span class="mw-headline" id="Section_d.C3.A9di.C3.A9e">Section dédiée</span>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://ec.europa.eu/eurostat/fr/web/crime/6">Criminalité et justice
+                                        pénale</a>]
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="mw-headline" id="M.C3.A9thodologie_.2F_M.C3.A9tadonn.C3.A9es">Méthodologie
+                                    / Métadonnées</span>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://ec.europa.eu/eurostat/cache/metadata/en/crim_esms.htm">Criminalité
+                                        et justice pénale</a> (ESMS metadata file — crim_esms)
+                                </li>
+                            </ul>
+
+                            <h3>
+                                <span class="mw-headline" id="Autres_informations">Autres informations</span>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:52006DC0437:FR:NOT">Communication
+                                        de la Commission COM/2006/437 final</a>: Élaboration d’une stratégie globale et
+                                    cohérente
+                                    de l’UE en vue de l’établissement de statistiques sur la criminalité et la justice
+                                    pénale: Plan d’action
+                                    de l’UE 2006–2010
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://eur-lex.europa.eu/JOHtml.do?uri=OJ:C:2005:053:SOM:FR:HTML">Le
+                                        programme de La Haye: renforcer la liberté, la sécurité et la justice dans
+                                        l’Union européenne</a> (Journal
+                                    officiel C 53 du 3.3.2005, p.11)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://eur-lex.europa.eu/JOHtml.do?uri=OJ:C:2010:115:SOM:FR:HTML">Le
+                                        Programme de Stockholm — Une Europe ouverte et sûre qui sert et protège les
+                                        citoyens</a> (Journal officiel
+                                    C 115 du 4.5.2010, p.1)
+                                </li>
+                            </ul>
+                            <h2>
+                                <span class="mw-headline" id="Liens_externes">Liens externes</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a rel="nofollow" class="external text" href="http://fra.europa.eu/fr">Agence des
+                                        droits fondamentaux de l’Union européenne</a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://www.coe.int/fr/web/portal/home">Conseil de l’Europe</a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text" href="http://www.eige.europa.eu/">European
+                                        Institute for Gender Equality</a> (en anglais)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text" href="http://www.emcdda.europa.eu/">European
+                                        Monitoring Centre for Drugs and Drug Addiction</a> (en anglais)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://wp.unil.ch/europeansourcebook/printed-editions-2/printed-editions/">European
+                                        Sourcebook of Crime and Criminal Justice Statistics — 4th edition</a> (en
+                                    anglais)
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="external text"
+                                        href="http://www.unodc.org/unodc/fr/data-and-analysis/index.html">Office des
+                                        Nations unies contre la drogue et le crime — Recherche et analyses</a>
+                                </li>
+                            </ul>
+                            <p>
+                                <br>
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="R.C3.A9f.C3.A9rences">Références</span>
+                            </h2>
+                            <ol class="references">
+                                <li id="cite_note-1">
+                                    <span class="mw-cite-backlink">
+                                        <a href="#cite_ref-1">
+                                            <span class="cite-accessibility-label">Aller </span>↑</a>
+                                    </span>
+                                    <span class="reference-text">Par exemple, la Grèce, Chypre, le Luxembourg, l’Islande
+                                        et le Liechtenstein ne font pas de distinction
+                                        entre les «cambriolages dans un lieu d’habitation» et ceux qui sont effectués
+                                        dans les magasins, dans
+                                        les garages, etc. Leurs données ne peuvent donc pas être comparées directement à
+                                        celles des autres pays
+                                        qui ne portent que sur les cambriolages dans un lieu d’habitation.</span>
+                                </li>
+                            </ol>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <!-- end content -->
+                        <div class="visualClear"></div>
+                    </div>
+
+
+                    <!--</div>-->
+                    <ul class="list-inline footer-nav">
+
+                        <li id="ca-nstab-archive" class="selected">
+                            <a href="">Archive</a>
+                        </li>
+                        <li id="ca-talk" class="new">
+                            <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=StatExp:Crime_statistics/fr&amp;action=edit&amp;redlink=1"
+                                title="Discussion au sujet de cette page de contenu [t]" accesskey="t">Discussion</a>
+                        </li>
+                        <li id="ca-history">
+                            <a href="&amp;action=history" rel="archives"
+                                title="Les versions passées de cette page (avec leurs contributeurs) [h]"
+                                accesskey="h">Historique</a>
+                        </li>
+                        <li style="float:right;">ISSN 2443-8219</li>
+                    </ul>
+
+
+
+                </div>
+
+                <!-- END CONTENT-->
+            </div>
+
+        </div>
+
+
+        <!--BEGIN FOOTER-->
+        <div class="row page-footer">
+            <div class="col-lg-12 content-col">
+                <div id="footer" role="contentinfo" lang="fr" dir="ltr">
+                    <ul id="f-list" class="list-inline">
+                        <li id="lastmod"> Dernière modification de cette page le 22 décembre 2016 à 17:07.
+                            <br>
+                        </li>
+                        <li id="viewcount">Cette page a été consultée 53512 fois.</li>
+                        <li id="numberofwatchingusers">[2 utilisateurs en train de suivre]</li>
+                        <li id="privacy">
+                            <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Statistics_Explained:Privacy_policy"
+                                title="Statistics Explained:Privacy policy">Politique de confidentialité</a>
+                        </li>
+                        <li id="about">
+                            <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Statistics_Explained:About"
+                                title="Statistics Explained:About">À propos de Statistics Explained</a>
+                        </li>
+                        <li id="disclaimer">
+                            <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php?title=Statistics_Explained:General_disclaimer"
+                                title="Statistics Explained:General disclaimer">Avertissements</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--END FOOTER-->
+        </div>
+
+
+
+
+
+
+        <!--END PAGE-->
+    </div>
+</body>
+
+</html>

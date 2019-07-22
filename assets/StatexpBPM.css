@@ -1,0 +1,43 @@
+.statexpbpm-icon-current,
+.statexpbpm-icon-stable,
+.statexpbpm-icon-quality,
+.statexpbpm-icon-locked,
+.statexpbpm-icon-unlocked {
+	padding: 0px;
+	margin: 0px;
+	width: 16px;
+	height: 16px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.statexpbpm-icon-current {
+	background-image: url(media/1.png);
+}
+.statexpbpm-icon-stable {
+	background-image: url(media/2.png);
+}
+.statexpbpm-icon-quality {
+	background-image: url(media/3.png);
+}
+.statexpbpm-icon-locked {
+	background-image: url(media/lock-closed.png);
+}
+.statexpbpm-icon-unlocked {
+	width: 23px;
+	background-image: url(media/lock-open.png);
+}
+
+.statexpbpm_short {
+	border: 0px;
+	background-color: #f9f9f9;
+	padding: 1px;
+	font-size: 95%;
+	font-weight: normal;
+	margin: 0em 0em 0em 1em;
+	
+	text-align: left;
+	max-width: 450px;
+	line-height: 16px;
+}
