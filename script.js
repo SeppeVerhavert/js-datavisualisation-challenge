@@ -7,11 +7,13 @@ let list = table1.childNodes[5].children;
 let countryNames = [];
 
 for (i = 1; i < list.length; i++) {
-    countryNames.push(list[i].children[1].firstChild.data);
+    array = [];
 
-    for (j = 1; j < list[i].children.length; j++)
-        console.log(list[i].children[j].innerText);
+    for (j = 1; j < list[i].children.length; j++) {
+        array.push(list[i].children[j].innerText)
+    }
+
+    countryNames.push(array);
 }
 
-// console.log(list[1].children[j].innerText);
-// console.log(cityNames);
+console.log(countryNames);
