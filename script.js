@@ -48,11 +48,10 @@ var myBarChart = new Chart(ctx, {
 
 //----------------------------------    NEW CODE    ---------------------------------------//
 
-for (l = 0; l < list.length; l++) {
+for (l = 1; l < list.length; l++) {
 
-    let node = document.createElement("LI");
-    var textnode = document.createTextNode('<td><input type="checkbox" name="name1" />&nbsp;</td>'); 
-    node.appendChild(textnode);
+    let node = document.createElement('td');
+    node.innerHTML = '<input type="checkbox" name="name1" />'
 
     console.log(node);
     console.log(list[l]);
