@@ -46,15 +46,10 @@ var myBarChart = new Chart(ctx, {
     },
 });
 
-//----------------------------------    NEW CODE    ---------------------------------------//
+//----------------------------------    CheckBoxes    ---------------------------------------//
 
 for (l = 1; l < list.length; l++) {
-
     let node = document.createElement('td');
     node.innerHTML = '<input type="checkbox" name="name1" />'
-
-    console.log(node);
-    console.log(list[l]);
-
     list[l].appendChild(node);
 }
