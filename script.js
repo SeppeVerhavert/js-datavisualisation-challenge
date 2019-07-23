@@ -4,42 +4,35 @@ canvas.id = "myCanvas";
 header1.appendChild(canvas);
 
 let list = table1.childNodes[5].children;
-let countryNames = new Array();
+let dataRow = {};
 
-for (i = 1; i < list.length; i++) {
-    countryNames[i] = new Array();
+for (i = 0; i < list.length; i++) {
+    dataRow[i] = [];
 
     for (j = 1; j < list[i].children.length; j++) {
-        countryNames[i].push(list[i].children[j].innerText)
+        let newInteger = list[i].children[j].innerText;
+        dataRow[i].push(newInteger);
     }
 }
 
-console.log(countryNames[3][4]);
+let countryName = dataRow[1].slice(0,1);
+let yearList = dataRow[0].slice(1);
+let dataList = dataRow[1].slice(1,12);
+let numberList = [];
+
+for (k=0; k < dataList.length; k++) {
+    newNumber = parseInt(dataList[k]);
+    numberList.push(newNumber);
+}
 
 var ctx = document.getElementById('myCanvas').getContext('2d');
 var myBarChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['2002', '2003', '2004', '2005', '2006', '2007'],
+        labels: yearList,
         datasets: [{
-            label: 'Belgium',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            label: countryName,
+            data: numberList,
             borderWidth: 1
         }]
     },
