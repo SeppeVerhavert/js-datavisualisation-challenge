@@ -5,48 +5,9 @@ let canvas = document.createElement('canvas');
 canvas.id = "myCanvas";
 header1.appendChild(canvas);
 
-//-----------------------------------   PUSH DATA IN OBJECT   ------------------------------//
+//----------------------------------    ADD CHECKBOXES    ---------------------------------//
 
 let list = table1.childNodes[5].children;
-let dataJSON = {};
-
-for (i = 0; i < list.length; i++) {
-    dataJSON[i] = [];
-
-    for (j = 1; j < list[i].children.length; j++) {
-        let newInteger = list[i].children[j].innerText;
-        dataJSON[i].push(newInteger);
-    }
-}
-
-//-----------------------------------   LISTS   -------------------------------------------//
-
-let countryName = dataJSON[1].slice(0, 1);
-let yearList = dataJSON[0].slice(1);
-let dataList = dataJSON[1].slice(1, 12);
-let numberList = [];
-
-for (k = 0; k < dataList.length; k++) {
-    newNumber = parseInt(dataList[k]);
-    numberList.push(newNumber);
-}
-
-//-----------------------------------   CHART   -------------------------------------------//
-
-var ctx = document.getElementById('myCanvas').getContext('2d');
-var myBarChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: yearList,
-        datasets: [{
-            label: 'Nombre (x1000) dans ' + countryName,
-            data: numberList,
-            borderWidth: 1
-        }]
-    },
-});
-
-//----------------------------------    CheckBoxes    ---------------------------------------//
 
 for (l = 1; l < list.length; l++) {
     let node = document.createElement('td');
@@ -54,12 +15,59 @@ for (l = 1; l < list.length; l++) {
     list[l].appendChild(node);
 
     let checkBox = document.getElementsByClassName("checkBox")[l - 1];
-    checkBox.addEventListener('click', showRow);
+    checkBox.addEventListener('click', addCountry);
 }
 
-function showRow() {
-    console.log(this.parentNode.parentNode);
+//----------------------------------    LISTS   ------------------------------------------//
+
+let countryName = [];
+let yearList = [];
+let numberList = [];
+
+for (j = 2; j < list[0].children.length; j++) {
+    let newYear =  list[0].children[j].innerHTML;
+    yearList.push(newYear);
+    console.log(yearList);
 }
+
+//----------------------------------    ADD COUNTRY     ----------------------------------//
+
+function addCountry() {
+    
+    let newCountry = this.parentNode.parentNode.children[1].innerHTML;
+    countryName.push(newCountry);
+
+    let newData = this.parentNode.parentNode.children;
+    for (i = 2; i < newData.length - 1; i++) {
+        let newInteger = parseInt(newData[i].innerHTML);
+        numberList.push(newInteger);
+    }
+    drawChart();
+}
+
+//-----------------------------------   CHART   -------------------------------------------//
+
+function drawChart() {
+    var ctx = document.getElementById('myCanvas').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'horizontalBar',
+        data: {
+            labels: yearList,
+            datasets: [{
+                label: 'Nombre (x1000) dans ' + countryName,
+                data: numberList,
+                borderWidth: 1
+            }]
+        },
+    });
+}
+
+//----------------------------------    DISPLAY BOOLEAN     --------------------------------//
+
+let dipslay = false;
 
 //----------------------------------    NEW CODE    ----------------------------------------//
+
+
+
 
