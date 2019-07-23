@@ -54,10 +54,12 @@ for (l = 1; l < list.length; l++) {
     list[l].appendChild(node);
 
     let checkBox = document.getElementsByClassName("checkBox")[l - 1];
-    checkBox.id = "CB" + l;
-    checkBox.addEventListener('click', showID);
+    checkBox.addEventListener('click', showRow);
 }
 
-function showID() {
-    console.log(this.id);
+function showRow() {
+    console.log(this.parentNode.parentNode);
 }
+
+//----------------------------------    NEW CODE    ----------------------------------------//
+
