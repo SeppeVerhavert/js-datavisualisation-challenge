@@ -7,6 +7,22 @@ header1.appendChild(canvas);
 
 //----------------------------------    ADD CHECKBOXES    ---------------------------------//
 
+let countryNames = new Array();
+
+for (i = 1; i < list.length; i++) {
+    countryNames[i] = new Array();
+    for (j = 1; j < list[i].children.length; j++) {
+        array.push(list[i].children[j].innerText)
+        countryNames[i].push(list[i].children[j].innerText)
+    }
+    countryNames.push(array);
+    console.log(countryNames);
+}
+
+//----------------------------------    
+
+console.log(countryNames); 
+
 let list = table1.childNodes[5].children;
 
 for (l = 1; l < list.length; l++) {
