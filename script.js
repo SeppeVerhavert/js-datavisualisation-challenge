@@ -5,7 +5,7 @@ let canvas = document.createElement('canvas');
 canvas.id = "myCanvas";
 header1.appendChild(canvas);
 
-//----------------------------------    ADD CHECKBOXES    ---------------------------------//
+//----------------------------------    GET DATA    --------------------------------------//
 
 let countryNames = new Array();
 
@@ -19,7 +19,7 @@ for (i = 1; i < list.length; i++) {
     console.log(countryNames);
 }
 
-//----------------------------------    
+//----------------------------------    ADD CHECKBOXES    ---------------------------------//
 
 console.log(countryNames); 
 
