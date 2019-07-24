@@ -29,23 +29,22 @@ for (j = 2; j < list[0].children.length; j++) {
     yearList.push(newYear);
 }
 
-//----------------------------------    DISPLAY BOOLEAN     --------------------------------//
-
-let display = false;
-
 //----------------------------------    DISPLAY COUNTRY     -------------------------------//
 
 function displayData() {
     let checkedBox = this;
-    if (!display) {
+
+    if (checkedBox.attributes.class.value = "checkBox") {
+        console.log(checkedBox);
         addData(checkedBox);
         drawChart();
-        display = true;
-    }
-    else if (display) {
+        checkedBox.classList.add("checkedIsOn");
+        console.log(checkedBox);
+    } else {
         removeData(checkedBox);
         drawChart();
-        display = false;
+        checkedBox.classList.remove("checkedIsOn");
+        console.log(checkedBox);
     }
 }
 
