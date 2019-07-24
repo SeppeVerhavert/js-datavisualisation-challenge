@@ -15,7 +15,7 @@ for (l = 1; l < list.length; l++) {
     list[l].appendChild(node);
 
     let checkBox = document.getElementsByClassName("checkBox")[l - 1];
-    checkBox.addEventListener('click', addCountry);
+    checkBox.addEventListener('click', displayCountry);
 }
 
 //----------------------------------    LISTS   ------------------------------------------//
@@ -25,25 +25,60 @@ let yearList = [];
 let numberList = [];
 
 for (j = 2; j < list[0].children.length; j++) {
-    let newYear =  list[0].children[j].innerHTML;
+    let newYear = list[0].children[j].innerHTML;
     yearList.push(newYear);
-    console.log(yearList);
+}
+
+//----------------------------------    DISPLAY BOOLEAN     --------------------------------//
+
+let display = false;
+
+//----------------------------------    DISPLAY COUNTRY     -------------------------------//
+
+function displayCountry() {
+    let checkedBox = this;
+    if (!display) {
+        addCountry(checkedBox);
+        drawChart();
+        display = true;
+    }
+    else if (display) {
+        removeCountry(checkedBox);
+        drawChart();
+        display = false;
+    }
 }
 
 //----------------------------------    ADD COUNTRY     ----------------------------------//
 
-function addCountry() {
-    
-    let newCountry = this.parentNode.parentNode.children[1].innerHTML;
+function addCountry(checkedBox) {
+    let newCountry = checkedBox.parentNode.parentNode.children[1].innerHTML;
     countryName.push(newCountry);
 
-    let newData = this.parentNode.parentNode.children;
+    let newData = checkedBox.parentNode.parentNode.children;
     for (i = 2; i < newData.length - 1; i++) {
         let newInteger = parseInt(newData[i].innerHTML);
         numberList.push(newInteger);
     }
-    drawChart();
 }
+
+//----------------------------------    REMOVE COUNTRY     -------------------------------//
+
+function removeCountry(checkedBox) {
+    let oldCountry = checkedBox.parentNode.parentNode.children[1].innerHTML;
+    let index = countryName.indexOf(oldCountry);
+    countryName.splice(index, index + 1);
+
+    
+
+    // let newData = checkedBox.parentNode.parentNode.children;
+    // for (i = 2; i < newData.length - 1; i++) {
+    //     let newInteger = parseInt(newData[i].innerHTML);
+    //     numberList.push(newInteger);
+    // }
+}
+
+//-----------------------------------   CHART   -------------------------------------------//
 
 //-----------------------------------   CHART   -------------------------------------------//
 
@@ -61,13 +96,3 @@ function drawChart() {
         },
     });
 }
-
-//----------------------------------    DISPLAY BOOLEAN     --------------------------------//
-
-let dipslay = false;
-
-//----------------------------------    NEW CODE    ----------------------------------------//
-
-
-
-
