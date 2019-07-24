@@ -55,9 +55,9 @@ function addCountry(checkedBox) {
     let newCountry = checkedBox.parentNode.parentNode.children[1].innerHTML;
     countryName.push(newCountry);
 
-    let newData = checkedBox.parentNode.parentNode.children;
-    for (i = 2; i < newData.length - 1; i++) {
-        let newInteger = parseInt(newData[i].innerHTML);
+    let newDataSet = checkedBox.parentNode.parentNode.children;
+    for (i = 2; i < newDataSet.length - 1; i++) {
+        let newInteger = parseFloat((newDataSet[i].innerHTML).replace(',', '.'));
         numberList.push(newInteger);
     }
 }
@@ -66,9 +66,18 @@ function addCountry(checkedBox) {
 
 function removeCountry(checkedBox) {
     let oldCountry = checkedBox.parentNode.parentNode.children[1].innerHTML;
-    let index = countryName.indexOf(oldCountry);
-    countryName.splice(index, index + 1);
+    let indexCountry = countryName.indexOf(oldCountry);
+    countryName.splice(indexCountry, indexCountry + 1);
 
+    let oldDataSet = checkedBox.parentNode.parentNode.children;
+    for (i = 2; i < oldDataSet.length - 1; i++) {
+        let oldData = parseFloat(oldDataSet[i].innerHTML.replace(',', '.'));
+        console.log(oldData);
+        let indexData = numberList.indexOf(oldData);
+        console.log(indexData);
+        numberList.splice(indexData, indexData + 1);
+        console.log(numberList);
+    }
     
 
     // let newData = checkedBox.parentNode.parentNode.children;
