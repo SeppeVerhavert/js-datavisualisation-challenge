@@ -29,7 +29,7 @@ for (l = 1; l < list.length; l++) {
     checkBox.addEventListener('click', displayData);
 }
 
-//----------------------------------    DISPLAY COUNTRY     -------------------------------//
+//----------------------------------    DISPLAY DATA     --------------------------------//
 
 function displayData() {
     let checkedBox = this;
@@ -92,16 +92,20 @@ function removeDataSet(checkedBox) {
 //-----------------------------------   CHART   -------------------------------------------//
 
 function drawChart() {
+    let Belgium = 5;
     var ctx = document.getElementById('myCanvas').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
             labels: yearList,
-            datasets: [{
-                label: 'Nombre (x1000) dans ' + countryName,
-                data: numberList,
-                borderWidth: 1
-            }]
+            datasets: [
+                {
+                    label: countryName,
+                    data: numberList,
+                }, {
+                    label: countryName,
+                    data: numberList,
+                }]
         },
     });
 }
