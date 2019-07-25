@@ -34,17 +34,14 @@ for (l = 1; l < list.length; l++) {
 function displayData() {
     let checkedBox = this;
 
-    if (checkedBox.attributes.class.value = "checkBox") {
-        console.log(checkedBox);
+    if (checkedBox.attributes.class.value == "checkBox") {
         addData(checkedBox);
         drawChart();
         checkedBox.classList.add("checkedIsOn");
-        console.log(checkedBox);
     } else {
         removeData(checkedBox);
         drawChart();
         checkedBox.classList.remove("checkedIsOn");
-        console.log(checkedBox);
     }
 }
 
