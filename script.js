@@ -36,12 +36,13 @@ function displayData() {
 
     if (checkedBox.attributes.class.value == "checkBox") {
         addData(checkedBox);
-        drawChart();
         checkedBox.classList.add("checkedIsOn");
+        setTimeout(drawChart, 1000);
+        setTimeout(testFunction, 1000);
     } else {
         removeData(checkedBox);
-        drawChart();
         checkedBox.classList.remove("checkedIsOn");
+        setTimeout(drawChart, 1000);
     }
 }
 
@@ -50,6 +51,7 @@ function displayData() {
 function addData(checkedBox) {
     addCountry(checkedBox);
     addDataSet(checkedBox);
+    addToDataSets(checkedBox);
 }
 
 function addCountry(checkedBox) {
@@ -66,11 +68,57 @@ function addDataSet(checkedBox) {
     }
 }
 
+//----------------------------------    DATASETS    ---------------------------------------//
+
+let dataSets = []
+
+function addToDataSets() {
+    let newCountryName = countryName;
+    countryName = [];
+    let newNumberList = numberList;
+    numberList = [];
+
+    let newObject = {
+        label: newCountryName,
+        data: newNumberList,
+    };
+
+    dataSets.push(newObject);
+    console.log(dataSets);
+}
+
+
+function removeFromDataSets() {
+
+    let newObject = {
+        label: newCountryName,
+        data: newNumberList,
+    };
+
+    dataSets.push(newObject);
+    console.log(dataSets.length);
+}
+
+//-----------------------------------   CHART   -------------------------------------------//
+
+function drawChart() {
+    let Belgium = 5;
+    var ctx = document.getElementById('myCanvas').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: yearList,
+            datasets: dataSets,
+        },
+    });
+}
+
 //----------------------------------    REMOVE DATA     -------------------------------//
 
 function removeData(checkedBox) {
     removeCountry(checkedBox);
     removeDataSet(checkedBox);
+    removeFromDataSets(checkedBox);
 }
 
 function removeCountry(checkedBox) {
@@ -89,23 +137,6 @@ function removeDataSet(checkedBox) {
     }
 }
 
-//-----------------------------------   CHART   -------------------------------------------//
-
-function drawChart() {
-    let Belgium = 5;
-    var ctx = document.getElementById('myCanvas').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'horizontalBar',
-        data: {
-            labels: yearList,
-            datasets: [
-                {
-                    label: countryName,
-                    data: numberList,
-                }, {
-                    label: countryName,
-                    data: numberList,
-                }]
-        },
-    });
+function testFunction() {
+    console.log("test");
 }
