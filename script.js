@@ -34,14 +34,18 @@ setTimeout(checkBoxBelgium, 500);
 function checkBoxBelgium() {
     let activeCheckBox = list[1].children[13].children[0];
     activeCheckBox.checked = "checked";
-    activeCheckBox.classList.add("checkedIsOn");
-    setTimeout(displayData, 500);
+    displayData();
 }
 
 //----------------------------------    DISPLAY DATA     --------------------------------//
 
 function displayData() {
     let checkedBox = this;
+
+    if (checkedBox.attributes = "undefined") {
+        checkedBox = list[1].children[13].children[0];
+    }
+
     if (checkedBox.attributes.class.value == "checkBox") {
         addData(checkedBox);
         checkedBox.classList.add("checkedIsOn");
@@ -91,8 +95,6 @@ function addToDataSets() {
     };
 
     dataSets.push(newObject);
-    console.log(dataSets);
-    console.log(newCountryName);
 }
 
 //-----------------------------------   CHART   -------------------------------------------//
@@ -119,6 +121,4 @@ function removeFromDataSets(checkedBox) {
         console.log(i);
         }
     }
-    console.log(dataSets);
-    console.log(oldCountry);
 }
