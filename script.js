@@ -29,20 +29,27 @@ for (l = 1; l < list.length; l++) {
     checkBox.addEventListener('click', displayData);
 }
 
+setTimeout(checkBoxBelgium, 500);
+
+function checkBoxBelgium() {
+    let activeCheckBox = list[1].children[13].children[0];
+    activeCheckBox.checked = "checked";
+    activeCheckBox.classList.add("checkedIsOn");
+    setTimeout(displayData, 500);
+}
+
 //----------------------------------    DISPLAY DATA     --------------------------------//
 
 function displayData() {
     let checkedBox = this;
-
     if (checkedBox.attributes.class.value == "checkBox") {
         addData(checkedBox);
         checkedBox.classList.add("checkedIsOn");
-        setTimeout(drawChart, 1000);
-        setTimeout(testFunction, 1000);
+        setTimeout(drawChart, 500);
     } else {
-        removeData(checkedBox);
+        removeFromDataSets(checkedBox);;
         checkedBox.classList.remove("checkedIsOn");
-        setTimeout(drawChart, 1000);
+        setTimeout(drawChart, 500);
     }
 }
 
@@ -85,24 +92,12 @@ function addToDataSets() {
 
     dataSets.push(newObject);
     console.log(dataSets);
-}
-
-
-function removeFromDataSets() {
-
-    let newObject = {
-        label: newCountryName,
-        data: newNumberList,
-    };
-
-    dataSets.push(newObject);
-    console.log(dataSets.length);
+    console.log(newCountryName);
 }
 
 //-----------------------------------   CHART   -------------------------------------------//
 
 function drawChart() {
-    let Belgium = 5;
     var ctx = document.getElementById('myCanvas').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'bar',
@@ -115,28 +110,15 @@ function drawChart() {
 
 //----------------------------------    REMOVE DATA     -------------------------------//
 
-function removeData(checkedBox) {
-    removeCountry(checkedBox);
-    removeDataSet(checkedBox);
-    removeFromDataSets(checkedBox);
-}
 
-function removeCountry(checkedBox) {
+function removeFromDataSets(checkedBox) {
     let oldCountry = checkedBox.parentNode.parentNode.children[1].innerHTML;
-    let indexCountry = countryName.indexOf(oldCountry);
-    countryName.splice(indexCountry, indexCountry + 1);
-}
-
-function removeDataSet(checkedBox) {
-    let oldDataSet = checkedBox.parentNode.parentNode.children;
-    for (i = 2; i < oldDataSet.length - 1; i++) {
-        let oldData = parseFloat(oldDataSet[i].innerHTML.replace(',', '.'));
-        if (isNaN(oldData)) { oldData = 0; }
-        let indexData = numberList.indexOf(oldData);
-        numberList.splice(indexData, indexData + 1);
+    for (i = 0; i < dataSets.length; i++) {
+        if (dataSets[i].label[0] === oldCountry) {
+            dataSets.splice(i, i + 1);
+        console.log(i);
+        }
     }
-}
-
-function testFunction() {
-    console.log("test");
+    console.log(dataSets);
+    console.log(oldCountry);
 }
