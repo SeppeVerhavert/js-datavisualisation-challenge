@@ -1,9 +1,9 @@
 //-----------------------------------   CANVAS   -------------------------------------------//
+
 let header1 = document.getElementsByTagName('h3')[0];
 let canvas = document.createElement('canvas');
 canvas.id = "myCanvas";
 header1.appendChild(canvas);
-
 
 //----------------------------------    LISTS   ------------------------------------------//
 
@@ -46,11 +46,9 @@ function displayData() {
     if (checkedBox.attributes.class.value == "checkBox") {
         addData(checkedBox);
         checkedBox.classList.add("checkedIsOn");
-        setTimeout(drawChart, 300);
     } else {
         removeFromDataSets(checkedBox);;
         checkedBox.classList.remove("checkedIsOn");
-        setTimeout(drawChart, 300);
     }
 }
 
@@ -92,20 +90,20 @@ function addToDataSets() {
     };
 
     dataSets.push(newObject);
+    myChart.update();
 }
 
 //-----------------------------------   CHART   -------------------------------------------//
 
-function drawChart() {
-    var ctx = document.getElementById('myCanvas').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: yearList,
-            datasets: dataSets,
-        },
-    });
-}
+var ctx = document.getElementById('myCanvas').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: yearList,
+        datasets: dataSets,
+    },
+});
+
 
 //----------------------------------    REMOVE DATA     -------------------------------//
 
@@ -118,4 +116,5 @@ function removeFromDataSets(checkedBox) {
             console.log(i);
         }
     }
+    myChart.update();
 }
